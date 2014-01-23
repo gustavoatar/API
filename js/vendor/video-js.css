@@ -802,11 +802,6 @@ https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
     margin:-4em 0 0 -6em; /* the old negative margin trick */
 }
 
-	.video-js .vjs-big-play-button {
-    right: 31%;
-	top: 44%;
-    margin:-4em 0 0 -6em; /* the old negative margin trick */
-}
 @media(min-width: 767px) {
 
 .video-js .vjs-tech {  }

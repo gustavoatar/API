@@ -317,12 +317,9 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	height: auto;
 }
 
+.video, .row.padding.video { min-height:290px; height: 100%; padding-top: 0; padding-bottom: 0;}
 
-.video, .row.padding.video { min-height: 388px; height: 100%; padding-top: 0; padding-bottom: 0;}
-
-
-
-.video-js.vjs-default-skin { max-height: 388px; z-index:0 ; overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0;}
+.video-js.vjs-default-skin { z-index:0 ; overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0;}
 
 .video-js.vjs-controls-enabled { z-index: 99;}
 .video-js.vjs-playing { z-index: 99; background: #fff; }
@@ -1573,7 +1570,6 @@ ul.step-links li a + a {
 	line-height: 1.1em; 
   
 }
-.video{ min-height: 378px; }
 .container .jumbotron {
 		margin: 0;
 	}
@@ -1671,8 +1667,4 @@ ul.step-links li a + a {
 @media (max-width: 767px) { ... }
 
 /* Landscape phones and down */
-@media (max-width: 480px) { 
-
-
-
- }
+@media (max-width: 480px) { ... }
