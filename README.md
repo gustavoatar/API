@@ -1,8 +1,8 @@
 Hearst API Website
 ===
 
-Baseline styles and styleguide for the Hearst API Portal.  
---
+Baseline styleguide for the Hearst API Portal.  
+---
 
 Built off of Bootstrap 3.0 with HTML5 Boilerplate, layout is mobile first with responsive media queries.  
 
