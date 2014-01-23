@@ -4,7 +4,6 @@ API
 Hearst API Website
 
 Starter Kit aimed at setting the baseline styles for the Hearst API Portal.  
-
 ===
 
 Built off of Bootstrap 3.0 with HTML5 Boilerplate, layout is mobile first with responsive media queries.  
