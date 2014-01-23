@@ -1,0 +1,88 @@
+
+
+
+
+
+
+
+/***************/
+
+	/* Navigation
+	
+
+****************/
+
+
+
+/*
+.app-idea{
+	background: url('../images/hearst-tower.jpg') 50% 0 no-repeat;
+	background-size: fixed;	
+	padding: 10px 0 40px 0;
+	min-height: 880px;	
+}
+
+.phone-hand {
+	background: url('../images/phone-hand.png') 50% 0 no-repeat;
+	background-size: fixed;	
+	bottom: 0;
+	left: 0;
+	width: 861px;
+	height: 880px;
+	position: absolute;
+	z-index: 0;
+}
+
+.bubble-one {
+	background: url('../images/car.png') 50% 0 no-repeat;
+	background-size: fixed;	
+	top: 5%;
+	left: 0;
+	width: 279px;
+	height: 260px;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+}
+
+.bubble-two {
+	background: url('../images/auto-you.png') 50% 0 no-repeat;
+	background-size: fixed;	
+	bottom: 40%;
+	right: 0%;
+	width: 580px;
+	height: 317px;
+	position: absolute;
+	z-index: 0;
+	opacity: 0;
+}
+
+.app-idea.come-in .bubble-one{ 
+	opacity: 1; 
+	transition: opacity 1s;
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+}
+.app-idea.come-in .bubble-two{ 
+	opacity: 1; 
+	transition: opacity 2s;
+	animation-delay:5s;
+	-webkit-animation-delay:5s;
+}
+
+.flash {
+	background: url('../images/flash.png') top left no-repeat;
+	top: 240px;
+	left: 322px;
+	position: absolute;
+	z-index: 1;
+	width: 326px;
+	height: 489px;
+	opacity: 0;
+}
+*/
+
+/************************ ARROWS *****************************/
+
+
+

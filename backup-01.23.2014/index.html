@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hearst Developer API</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-152x152.png" />
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/vendor/video-js.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container shadow main-container">
+        <div class="navbar-fixed-top shadow">
+            <div class="navbar-holder">
+                <div class="navbar dark-blue-bk top">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#faq" id="faq-link">FAQ</a>
+                            </li>
+                            <li><a href="#blog" id="blog-link">Blog</a>
+                            </li>
+                            <li><a href="#support" id="support-link">Support</a>
+                            </li>
+                            <li><a href="#work" id="work-for-us-link">Work For Us</a>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdown">Quick Links <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">My Account</li>
+                                    <li><a href="#faq">My Applications</a>
+                                    </li>
+                                    <li><a href="#support">My API Keys</a>
+                                    </li>
+                                    <li><a href="#support">My Settings</a>
+                                    </li>
+                                    <li><a href="#blog">Register Application</a>
+                                    </li>
+                                    <li><a href="#signout">Sign Out</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Helpful Links</li>
+                                    <li><a href="#faq">FAQ</a>
+                                    </li>
+                                    <li><a href="#blog">Blog</a>
+                                    </li>
+                                    <li><a href="#support">Support</a>
+                                    </li>
+                                    <li><a href="#work">Work For Us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!--<form class="navbar-form navbar-right login-home">
+                <div class="form-group">
+                  <input type="text" placeholder="Email" class="form-control">
+                  </div>
+                <div class="form-group">
+                  <input type="password" placeholder="Password" class="form-control">
+                  </div>
+                <button type="submit" class="btn btn-success">Sign in</button>
+                </form>  -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar navbar-inverse main">
+                	<div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand large-logo" href="#">Hearst Developer API</a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                        </div>
+                        <ul class="nav navbar-nav navbar-collapse collapse">
+                            <li><a href="#content"><span id="apis-link"></span>APIs</a>
+                            </li>
+                            <li><a href="#documentation"><span id="documentation-link"></span>Documentation</a>
+                            <li><a href="#iodocs"><span id="io-docs-link"></span>I/O Docs</a>
+                            </li>
+                            <li><a href="#search"><span id="register-link"></span>Register</a>
+                            </li>
+    
+                            <!--<form class="navbar-form navbar-right" id="nav-search-form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    </div>
+                  <button style="display: none;" type="submit" class="btn btn-success">Sign in</button>
+                  </form> -->
+                        </ul>
+                	</div>
+                </div>
+            </div>
+        </div>
+        <div class="page">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron">
+            	<h1 class="jumbotron-heading">Your blueprint for digital content.</h1>
+                <h2 class="jumbotron-subheading">Build applications for desktop, tablet, mobile and beyond.</h2>	
+                <ul class="step-links center-block">
+                    <li><a href="#" class="button register-big-ico"><span class="pulse"></span></a><a href="#">Step 1<span class="yellow">Register</span></a>
+                    </li>
+                    <li><a href="#" class="button documentation-big-ico"><span class="pulse"></span></a><a href="#">Step 2<span class="yellow">Explore</span></a>
+                    </li>
+                    <li><a href="#" class="button build-big-ico"><span class="pulse"></span></a><a href="#">Step 3<span class="yellow">Build</span></a>
+                    </li>
+                </ul>
+                <img src="images/stars-zero.png" border="0" class="stars stars-zero" />
+                <img src="images/stars-one.png" border="0" class="stars stars-one" />
+                <img src="images/stars-two.png" border="0" class="stars stars-two" />
+                <img src="images/stars-three.png" border="0" class="stars stars-three" />
+                <img src="images/stars-three.png" border="0" class="stars stars-four" />
+            </div>
+			<div class="container">
+            	<div class="row top-level-links">
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h4>Magazines</h4><a href="#"><img src="images/cta-bazaar.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="api-highlights">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h4>Autmotive</h4><a href="#"><img src="images/cta-auto.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="api-highlights">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h4>Healthcare</h4><a href="#"><img src="images/cta-health.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="api-highlights">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h4>Metrics</h4><a href="#"><img src="images/cta-metrics.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="api-highlights">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row padding">
+
+                    <div class="col-lg-12 video">
+                        <h1 class="aqua-text video-h1">Revolutionizing Innovation.</h1>
+                        <h2 class="dark-blue-text video-h2">Learn about the Hearst APIs.</h2> 
+                         <button class="btn btn-default play-video">Learn More</button>
+
+                        <video id="hearst-api" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto" poster="images/video-poster.png" data-setup="{}">
+                            <source src="videos/hearstapi.apple.mp4" type='video/mp4' />
+                            <source src="videos/hearstapi.webmhd.webm" type='video/webm' />
+                            <source src="videos/hearstapi.oggtheora.ogv" type='video/ogg' />
+                            <track kind="captions" src="opening.video.captions.vtt" srclang="en" label="English"></track>
+                            <!-- Tracks need an ending tag thanks to IE9 -->
+                            <track kind="subtitles" src="opening.video.captions.vtt" srclang="en" label="English"></track>
+                            <!-- Tracks need an ending tag thanks to IE9 -->
+                        </video>
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 app-idea" data-stellar-background-ratio="0.5" data-stellar-offset-parent="false" data-stellar-vertical-offset="-1150">
+                        <div class="phone-hand" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true" data-stellar-vertical-offset="-100"></div>
+                        <h1 class="white-text align-center">Got an idea?</h1>
+                        <h2 class="blue-black-text align-center">Sign up to get coding.</h2> 
+                        <div class="main-signup center-block">
+                        <img src="images/hearst-api-portal-logo.svg" width="252" height="31" />
+                        <p>Create an API Profile or <a href="#">Login with yours</a>.</p>
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="username" placeholder="Display Name">
+                                    <p class="info">This is the name others will see</p>
+                                </div>                                
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailverify" placeholder="Email Address Verification">
+                                </div>                                                             
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="passwordverify" placeholder="Password Verification">
+                                	<p class="info">Requires: 1 letter, 1 number, min. 8 characters</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">I agree to the <a href="#">Hearst API Terms of Service</a>.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+            <ul>
+            	<li><a href="#">APIs</a></li>
+            	<li><a href="#">Documentation</a></li>
+            	<li><a href="#">FAQ</a></li>
+            	<li><a href="#">Blog</a></li>
+            	<li><a href="#">Support</a></li>
+            	<li><a href="#">Sign In</a></li>
+            	<li class="gray"><a href="#">API Terms</a></li>
+            	<li class="gray"><a href="#">API Explorer</a></li>
+            	<li class="gray"><a href="#">API Branding Guide</a></li>
+			</ul>
+            <div class="more-hearst">
+            	<a href="#" class="pull-left">More Hearst Sites<span class="caret"></span></a>
+                <a href="#" class="pull-right">&copy;  2014 HEARST CORPORATION. All rights reserved.  Privacy policy</a>
+                 <div id="more-sites" style="display: table;">
+                    <div id="more-sites-left"><b>Newspapers</b>
+                        <ul>
+                            <li><a href="http://www.sfgate.com/" target="_blank">San Francisco Chronicle</a>
+                                <br>
+                                <a href="http://timesunion.com/" target="_blank">Albany Times Union</a>
+                                <br>
+                                <a href="http://www.connpost.com/" target="_blank">Connecticut Post</a>
+                                <a href="http://timesunion.com/" target="_blank">
+                                    <br>
+                                </a>
+                            </li>
+                            <li><a href="http://www.chron.com/" target="_blank">Houston Chronicle</a>
+                                <br>
+                                <a href="http://www.mysanantonio.com/" target="_blank">San Antonio Express-News</a>
+                                <br>
+                                <a href="http://www.greenwichtime.com/" target="_blank">Greenwich Time<br>
+                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="more-sites-center"><b>Magazines</b>
+                        <ul>
+                            <li><a href="http://www.caranddriver.com/" target="_blank">Car and Driver</a>
+                                <br>
+                                <a href="http://www.cosmopolitan.com/" target="_blank">Cosmopolitan</a>
+                                <br>
+                                <a href="http://www.countryliving.com/" target="_blank">Country Living</a>
+                                <br>
+                                <a href="http://www.elle.com/" target="_blank">ELLE</a>
+                                <br>
+                                <a href="http://www.elledecor.com/" target="_blank">ELLE Decor</a>
+                            </li>
+                            <li><a href="http://www.esquire.com/" target="_blank">Esquire</a>
+                                <br>
+                                <a href="http://www.goodhousekeeping.com/" target="_blank">Good Housekeeping</a>
+                                <br>
+                                <a href="http://www.harpersbazaar.com/" target="_blank">Harper's Bazaar</a>
+                                <br>
+                                <a href="http://www.housebeautiful.com/" target="_blank">House Beautiful</a>
+                            </li>
+                            <li><a href="http://www.marieclaire.com/" target="_blank">Marie Claire</a>
+                                <br>
+                                <a href="http://www.oprah.com/omagazine.html" target="_blank">O, The Oprah Magazine</a>
+                                <br>
+                                <a href="http://www.popularmechanics.com/" target="_blank">Popular Mechanics</a>
+                                <br>
+                                <a href="http://www.redbookmag.com/" target="_blank">Redbook</a>
+                            </li>
+                            <li><a href="http://www.roadandtrack.com/" target="_blank">Road &amp; Track</a>
+                                <br>
+                                <a href="http://www.seventeen.com/" target="_blank">Seventeen</a>
+                                <br>
+                                <a href="http://www.veranda.com/" target="_blank">Veranda</a>
+                                <br>
+                                <a href="http://www.womansday.com/" target="_blank">Woman's Day</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="more-sites-right"><b>Entertainment &amp; Broadcasting</b>
+                        <ul>
+                            <li><a href="http://www.aetv.com/" target="_blank">A&amp;E</a>
+                                <br>
+                                <a href="http://www.biography.com/" target="_blank">BIO</a> &nbsp;</li>
+                            <li><a href="http://espn.go.com/" target="_blank">ESPN</a>
+                                <br>
+                                <a href="http://espn.go.com/espnw/" target="_blank">ESPN W</a>
+                            </li>
+                            <li>&nbsp;&nbsp;<a href="http://www.history.com/" target="_blank">HISTORY</a>
+                                <br>&nbsp;&nbsp;
+                                <a href="http://www.mylifetime.com/index.php" target="_blank">Lifetime</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>&nbsp;</li>
+                        </ul>
+                    </div>
+                    <div id="more-sites-wide"><b>Websites</b>
+                        <br>
+                        <a href="http://www.thedailygreen.com/" target="_blank">TheDailyGreen</a>&nbsp;&nbsp;<a href="http://www.answerology.com/" target="_blank">Answerology</a>&nbsp;&nbsp;<a href="http://www.delish.com/" target="_blank">Delish</a>&nbsp;&nbsp;<a href="http://www.local.com/"
+                        target="_blank">Local</a>&nbsp; <a href="http://www.donatemydress.org/" target="_blank">DonateMyDress</a>&nbsp; <a href="http://www.misquincemag.com/" target="_blank">MisQuinceMag</a>&nbsp; <a href="http://www.quickandsimple.com/" target="_blank">Quick&amp;Simple</a>&nbsp;
+                        <a
+                        href="http://www.seattlepi.com/" target="_blank">seattlepi.com</a>
+                            <br>
+                            <a href="http://www.Manilla.com" target="_blank">Manilla.com</a>&nbsp; <a href="http://www.localedge.com" target="_blank">LocalEdge.com</a>&nbsp; <a href="http://www.LocalEdgeMedia.com" target="_blank">LocalEdgeMedia.com</a>&nbsp; <a href="http://www.Metrix4Media.com"
+                            target="_blank">Metrix4Media.com</a>&nbsp; <a target="_blank" href="http://www.citizenhearst.com">CitizenHearst.com</a>
+                    </div>
+                </div>           	
+            </div>
+            </footer>
+        </div>
+        <!-- /container -->
+    </div>
+    </div>
+    <script src="js/vendor/jquery-1.10.1.min.js"></script>
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+    <script src="js/vendor/video.js"></script>    
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

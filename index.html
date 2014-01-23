@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hearst Developer API</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-152x152.png" />
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="js/vendor/video-js.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container dark-box-shadow main-container">
+            <div class="navbar-holder navbar-fixed-top">
+                <div class="navbar dark-blue-bk top">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#faq" id="faq-link">FAQ</a>
+                            </li>
+                            <li><a href="#blog" id="blog-link">Blog</a>
+                            </li>
+                            <li><a href="#support" id="support-link">Support</a>
+                            </li>
+                            <li><a href="#signin" id="signin-link">Sign In</a>
+                            </li>
+                            <li class="dropdown text-right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdown">Quick Links <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">My Account</li>
+                                    <li><a href="#faq">My Applications</a>
+                                    </li>
+                                    <li><a href="#support">My API Keys</a>
+                                    </li>
+                                    <li><a href="#support">My Settings</a>
+                                    </li>
+                                    <li><a href="#blog">Register Application</a>
+                                    </li>
+                                    <li><a href="#signout">Sign Out</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="dropdown-header">Helpful Links</li>
+                                    <li><a href="#faq">FAQ</a>
+                                    </li>
+                                    <li><a href="#blog">Blog</a>
+                                    </li>
+                                    <li><a href="#support">Support</a>
+                                    </li>
+                                    <li><a href="#work">Work For Us</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar navbar-inverse main dark-box-shadow">
+                	<div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand logo" href="#">Hearst Developer API</a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                        </div>
+                        <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
+                            <li><a href="#content"><span id="apis-link"></span>APIs</a>
+                            </li>
+                            <li><a href="#documentation"><span id="documentation-link"></span>Documentation</a>
+                            <li><a href="#iodocs"><span id="io-docs-link"></span>I/O Docs</a>
+                            </li>
+                            <li><a href="#search"><span id="register-link"></span>Register</a>
+                            </li>
+    
+                            <!--<form class="navbar-form navbar-right" id="nav-search-form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    </div>
+                  <button style="display: none;" type="submit" class="btn btn-success">Sign in</button>
+                  </form> -->
+                        </ul>
+                	</div>
+                </div>
+            </div>
+        <div class="page">
+            <!-- Main jumbotron for a primary marketing message or call to action -->
+            <div class="jumbotron epic">
+ 
+            	<h1 class="jumbotron-heading white-text-shadow">Your blueprint for digital content.</h1>
+                <h4 class="jumbotron-subheading garamond">Build applications for desktop, tablet, mobile and beyond.</h2>
+				<button class="btn btn-default mobi">Get Started</button>
+                <ul class="step-links center-block">
+                    <li><a href="#" class="button register-big-ico"><span class="pulse"></span></a><a href="#">Step 1<span class="yellow">Register<span class="arrow-yellow"></span></span></a>
+                    </li>
+                    <li><a href="#" class="button documentation-big-ico"><span class="pulse"></span></a><a href="#">Step 2<span class="yellow">Explore<span class="arrow-yellow"></span></span></a>
+                    </li>
+                    <li><a href="#" class="button build-big-ico"><span class="pulse"></span></a><a href="#">Step 3<span class="yellow">Build<span class="arrow-yellow"></span></span></a>
+                    </li>
+                </ul>
+                <div class="stars stars-one" data-stellar-background-ratio="0.1" data-stellar-offset-parent="false" data-stellar-vertical-offset="20"></div>
+               <div class="stars stars-two" data-stellar-background-ratio="0.3" data-stellar-offset-parent="false" data-stellar-vertical-offset="0"></div>
+                <div class="stars stars-three" data-stellar-background-ratio="0.8" data-stellar-offset-parent="false" data-stellar-vertical-offset="90"></div>
+                <div class="stars stars-four" data-stellar-background-ratio="0.5" data-stellar-offset-parent="false" data-stellar-vertical-offset="120"></div>
+           <div class="logos"><img src="images/grid.png" class="img-responsive" /></div>
+           <div class="logos"><img src="images/grid-2.png" class="img-responsive" /></div>
+           <div class="logos"><img src="images/grid-3.png" class="img-responsive" /></div>
+            </div>
+			<div class="container">
+            	<div class="row top-level-links">
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h6 class="bright-blue uppercase helvetica">Magazines<span class="arrow-blue"></span></h6><a href="#"><img src="images/cta-bazaar.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="garamond">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h6 class="bright-blue uppercase helvetica">Automotive<span class="arrow-blue"></span></h6><a href="#"><img src="images/cta-auto.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="garamond">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h6 class="bright-blue uppercase helvetica">Healthcare<span class="arrow-blue"></span></h6><a href="#"><img src="images/cta-health.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="garamond">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                	<div class="col-sm-3 col-md-3 col-lg-3">
+                    	<h6 class="bright-blue uppercase helvetica">Metrics<span class="arrow-blue"></span></h6><a href="#"><img src="images/cta-metrics.jpg" border="0" class="img-circle img-responsive" /></a><h5 class="garamond">API Highlights</h5><p>Lorem ipsum dolor sit amet, consectetur 
+adipiscing elit. Quisque bibendum, metus vitae
+ tincidunt rutrum, felis felis interdum leo, a ornare.</p>
+                    </div>
+                </div>
+            </div>      
+            <div class="container">
+                <!-- Example row of columns -->
+                <div class="row padding video">
+
+                    <div class="col-lg-12 video">
+                    <div class="heading-large-block">
+                    	<h1 class="helvetica bright-blue">Revolutionize Innovation.</h1>
+                    	<h2 class="garamond">Learn more about the Hearst APIs.</h2>   
+                        <button class="btn btn-default play-video">Learn More</button>
+                        
+	                     <video id="hearst-api" class="video-js vjs-default-skin" controls preload="none" width="auto" height="auto" poster="images/thinking-man.png" data-setup="{}">
+                            <source src="videos/hearstapi.appleuniversal.mp4" type='video/mp4' />
+                            <source src="videos/hearstapi.webmhd.webm" type='video/webm' />
+                            <source src="videos/hearstapi.oggtheora.ogv" type='video/ogg' />
+                            <track kind="captions" src="videos/opening.video.captions.vtt" srclang="en" label="English"></track>
+                            <track kind="subtitles" src="videos/opening.video.captions.vtt" srclang="en" label="English"></track>
+                        </video>          
+                    </div>
+                   
+
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 app-idea">
+                        <!--<div class="phone-hand" data-stellar-background-ratio="0.5" data-stellar-offset-parent="true" data-stellar-vertical-offset="30"><div class="flash"></div></div>
+                        <div class="bubble-one"></div>
+                        <div class="bubble-two"></div>-->
+                        <div class="heading-block text-center">
+                            <h1 class="helvetica white">Got an idea?</h1>
+                            <h2 class="garamond">Sign up to get started.</h2>   
+                        </div>
+
+                        <div class="main-signup center-block">
+                        <img src="images/hearst-api-portal-logo.svg" />
+                        <p>Create an API Profile or <a href="#">Login with yours</a>.</p>
+                        <br />
+                            <form role="form">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="username" placeholder="Display Name">
+                                    <p class="info">This is the name others will see</p>
+                                </div>                                
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Email Address">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="emailverify" placeholder="Email Address Verification">
+                                </div>                                                             
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-control" id="passwordverify" placeholder="Password Verification">
+                                	<p class="info">Requires: 1 letter, 1 number, min. 8 characters</p>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">I agree to the <a href="#">Hearst API Terms of Service</a>.
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="container">
+            	<div class="row margin">
+                    <ul>
+                        <li><a href="#">APIs</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li class="gray"><a href="#">API Terms</a></li>
+                        <li class="gray"><a href="#">API Explorer</a></li>
+                        <li class="gray"><a href="#">API Branding Guide</a></li>
+                    </ul>
+                 </div>
+            	<div class="row margin borders">
+                    <ul class="">
+                        <li><a href="#" class="copyright">&copy;  2014 HEARST CORPORATION. All rights reserved.  Privacy policy</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <!-- /container -->
+    </div>
+    </div>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.visible.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>    
+    <script src="js/vendor/video.js"></script>    
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
