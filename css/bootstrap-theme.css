@@ -131,7 +131,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 .page .container { padding:0;}
 
-.row.padding { padding: 0px; margin: 0; }
+.row.padding { padding: 0; margin: 0; }
 
 
 /***************/
@@ -317,6 +317,14 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	height: auto;
 }
 
+.thinking-man {
+	background:transparent url('../images/thinking-man-1.jpg') no-repeat bottom center	; 
+   -webkit-background-size:auto; 
+   -moz-background-size:auto; 
+   -o-background-size:auto; 
+   background-size:auto; 	
+}
+
 .video, .row.padding.video { min-height:290px; height: 100%; padding-top: 0; padding-bottom: 0;}
 
 .video-js.vjs-default-skin { z-index:0 ; overflow: hidden; position: absolute; top: 0; left: 0; bottom: 0; right: 0;}
@@ -358,6 +366,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 .mobi.btn { display: block; position: relative; z-index: 10;font-size: 16px; margin: 20px auto 0 auto; width: 200px; }
 
+.btn.play-video { display: none; }
 
 .btn-default,
 .btn-primary,
@@ -523,7 +532,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 
 .navbar .container { 
-	padding: 0; margin: 0;
+	padding: 0;
 }	
 
 .navbar.dark-blue-bk .container .navbar-nav{
@@ -531,7 +540,10 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	padding: 0;
 }
 
-.container>.navbar-header, .container>.navbar-collapse { margin: 0; padding: 0;} 
+.container>.navbar-collapse { margin: 0; padding: 0;} 
+
+.container>.navbar-header{margin: 0 auto; width: 320px;}	/* drop down color choice */
+
 
 .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-nav .open .dropdown-menu>li>a:focus { color: #157ed6}
  
@@ -1429,7 +1441,6 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	}
 	
 	/* Center the Navigations */ 
-.container>.navbar-header{margin: 0 auto; width: 320px;}	/* drop down color choice */
 	.navbar-nav .open .dropdown-menu>li>a  {
 		color: #052a4a;
 	}	
@@ -1494,8 +1505,6 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	
 
 ****************/
-
-.row.padding { padding: 10px 100px;}
 
 .container {
 	padding-right: 0;
@@ -1576,6 +1585,18 @@ ul.step-links li a + a {
 		margin: 0;
 	}
 
+.video, .row.padding.video { min-height:378px;}
+
+.btn.play-video { display: block; } 
+
+.thinking-man {
+		background:transparent url('../images/thinking-man-3.png') no-repeat 0 0; 
+	   -webkit-background-size:cover; 
+	   -moz-background-size:cover; 
+	   -o-background-size:cover; 
+	   background-size:cover; 	
+	}	
+
 }
 
 @media(min-width: 768px) and (max-width: 1024px){
@@ -1655,7 +1676,7 @@ ul.step-links li a + a {
 	.open>.dropdown-menu { margin-left: -40px;}
 	footer ul li {
 		list-style-type: none;
-		padding: 30px 20px;
+		padding: 30px 10px;
 		display: inline;
 		float: left;
 		width: auto;
@@ -1666,7 +1687,6 @@ ul.step-links li a + a {
 /* Large desktop */
 @media (min-width: 1200px) { 
 	.jumbotron h1.jumbotron-heading { padding-top: 60px; }
-	.main-container { max-width: 1280px; }
 	footer ul li {
 		list-style-type: none;
 		padding: 30px 20px;
@@ -1675,13 +1695,25 @@ ul.step-links li a + a {
 		width: auto;
 		clear: none;
 	}
+	.thinking-man {
+		background:transparent url('../images/thinking-man-3.png') no-repeat 0 0; 
+	   -webkit-background-size:cover; 
+	   -moz-background-size:cover; 
+	   -o-background-size:cover; 
+	   background-size:cover; 	
+	}	
+
+	.video, .row.padding.video { min-height: 500px;}	
+	
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 979px) { ... }
+@media (min-width: 768px) and (max-width: 979px) { ...}
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
+@media (max-width: 767px) { 
+
+}
 
 /* Landscape phones and down */
 @media (max-width: 480px) { ... }
