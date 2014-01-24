@@ -131,7 +131,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 .page .container { padding:0;}
 
-.row.padding { padding: 0px; }
+.row.padding { padding: 0px; margin: 0; }
 
 
 /***************/
@@ -265,7 +265,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	position: relative;
 	background-size: fixed;
 	max-height:478px;
-	min-height: 240px;
+	overflow: hidden;	
 	margin-top: 120px;	
 }
 
