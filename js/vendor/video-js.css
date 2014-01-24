@@ -349,6 +349,9 @@ fonts to show/hide properly.
   cursor: pointer;
   float: right;
 }
+
+.video-js.vjs-fullscreen { position: fixed; overflow: hidden; z-index: 1000; left: 0 !important; top: 0 !important; bottom: 0 !important; right: 0 !important; width: 100% !important; height: 100% !important; _position: absolute !important;}
+
 .vjs-default-skin .vjs-fullscreen-control:before {
   content: "\e000";
 }
