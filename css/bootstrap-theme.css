@@ -33,7 +33,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 
-.heading-block h1, .heading-block h2 { line-height: 1.1em; margin: 0;	}
+.heading-block h1, .heading-block h2 { line-height: 1.1em; margin: 4px 0;	}
 
 .dropdown.text-right { padding-left: 26px; }
 
@@ -1486,7 +1486,7 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	text-align: center;
 	padding: 30px 40px;
 	position: absolute;
-	top: 120px;
+	top: 108px;
 	left: 50%;
 	margin-left: -220px;
 }
