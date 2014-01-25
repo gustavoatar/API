@@ -136,15 +136,15 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 .logo {
 	background: transparent url('../images/hearst-api-portal-logo.svg') -10px center no-repeat;
 	transition: all .8s;
-	height: 48px;
+	height: 38px;
 	text-align: center;
 	text-indent: -9999px;
 	width: 320px;
 	padding: 0;
 	display: block;
-	margin-left: 0px;	
+	margin: 8px 0 0 20px;	
 	text-transform: capitalize;
-	background-size: 80% 80%;
+	background-size: contain;
 }
 
 
@@ -1461,7 +1461,7 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	background: transparent url('../images/hearst-api-portal-logo.svg') center center no-repeat;
 	transition: all .8s;
 	height: 88px;
-	background-size: 90% 90%;	
+	background-size: contain;	
 }
 
 /* Top Nav Links */
