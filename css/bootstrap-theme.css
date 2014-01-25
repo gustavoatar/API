@@ -1,5 +1,6 @@
 @import '../fonts/helvetica-neue.css';
 @import '../fonts/garamond.css';
+@import '../fonts/glyphs.css';
 @import '../js/vendor/prism.css';
 
 /***************/
@@ -36,16 +37,6 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 .heading-block h1, .heading-block h2 { line-height: 1.1em; margin: 4px 0;	}
 
 .dropdown.text-right { padding-left: 26px; }
-
-.helvetica {
-	font-family: 'Helvetica Neue Condensed Bold', 'Helvetica Neue Bold', 'Helvetica', Arial, sans-serif;
-	letter-spacing: -1px;		
-}
-
-.garamond {
-	font-family: "Garamond Pro Italic", Garamond, Georgia, serif;
-	color: #052a4a;
-}
 
 .heading-large-block { margin-top: 1em; }
 
@@ -129,7 +120,8 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 ****************/
 
-.page .container { padding:0;}
+.home.page .container { padding:0;}
+.interior.page .container { padding: 0 15px; }
 
 .row.padding { padding: 0; margin: 0; }
 
@@ -142,16 +134,17 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 ****************/
 
 .logo {
-	background: transparent url('../images/hearst-api-portal-logo-small.svg') -10px center no-repeat;
+	background: transparent url('../images/hearst-api-portal-logo.svg') -10px center no-repeat;
 	transition: all .8s;
-	height: 88px;
+	height: 48px;
 	text-align: center;
 	text-indent: -9999px;
 	width: 320px;
 	padding: 0;
 	display: block;
-	margin-left: 20px;	
+	margin-left: 0px;	
 	text-transform: capitalize;
+	background-size: 80% 80%;
 }
 
 
@@ -266,7 +259,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	background-size: fixed;
 	max-height:478px;
 	overflow: hidden;	
-	margin-top: 120px;	
+	margin-top: 70px;	
 }
 
 
@@ -542,18 +535,18 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 .container>.navbar-collapse { margin: 0; padding: 0;} 
 
-.container>.navbar-header{margin: 0 auto; width: 320px;}	/* drop down color choice */
+.container>.navbar-header{margin: 0 auto;}	/* drop down color choice */
 
 
 .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-nav .open .dropdown-menu>li>a:focus { color: #157ed6}
  
-.navbar-inverse .navbar-toggle { background: #052a4a; color: #fff; margin-top: 16px; }
+.navbar-inverse .navbar-toggle { background: #052a4a; color: #fff; }
 
 .navbar-toggle {
 	float: none;
 	position: absolute;
-	top: 12px; 
-	right: 20px;
+	top: 0;
+	right: 10px;
 }
 
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus { background: #499ee8; border-color: #499ee8;}
@@ -571,12 +564,13 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	font-size: 12px;
 	color: #f8f8f8; 
 	text-align: center;
-	float: left;
 	padding: 8px 6px; 
 	border-bottom: 2px solid #052a4a;
 	text-transform:uppercase; 
 	transition: all .5s;
 }
+
+.dark-blue-bk .navbar-nav > li > a.dropdown-toggle { padding: 8px 24px;}
 
 /* Center the Navigations */ 
 /* drop down color choice */
@@ -1219,7 +1213,7 @@ li:hover>.build-big-ico{
 .arrow-yellow {
 	background: url('../images/arrows.png') top left no-repeat;
 	display: inline-block;
-	margin: 1px 0 0 2px;
+	margin: 3px 0 0 2px;
 	padding: 6px 4px;	
 	height: 16px;
 	overflow:hidden;
@@ -1228,7 +1222,7 @@ li:hover>.build-big-ico{
 .arrow-blue {
 	background: url('../images/arrows.png') center center no-repeat;
 	display: inline-block;
-	margin: 1px 0 0 2px;
+	margin: 3px 0 0 2px;
 	padding: 6px 4px;	
 	height: 16px;	
 	overflow:hidden;
@@ -1237,7 +1231,7 @@ li:hover>.build-big-ico{
 .arrow-white {
 	background: url('../images/arrows.png') bottom left no-repeat;
 	display: inline-block;
-	margin: 1px 0 0 2px;
+	margin: 3px 0 0 2px;
 	padding: 6px 4px;	
 	height: 16px;
 	overflow:hidden;
@@ -1421,12 +1415,18 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 		transition: all .5s;	
 		color: #60809c;
 		border-bottom: 2px solid #fff;
-		padding: 20px;
+		padding: 15px 20px;
 	}
+	
+	.dark-blue-bk .navbar-nav > li > a { float: left; }
+	
+	.navbar-nav>li>.dropdown-menu { margin-left: -40px; }
+	
+	.navbar>.container .navbar-brand { display: block; float: none; height: 78px; margin: 0 auto; width: 300px; }
 	
 	.mobi.btn {display: none;}
 	.main.navbar-nav li:last-child a { padding: 20px 0 20px 20px; }
-	
+	.dark-blue-bk .navbar-nav > li > a.dropdown-toggle { padding: 9px 18px;}
 	.dark-blue-bk .navbar-nav { width: auto; float: right;}
 
 	.dark-blue-bk .navbar-nav > li > a { 
@@ -1458,9 +1458,10 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 		border-bottom: 2px solid #60809c;	
 	}	
 	.logo {
-	background: transparent url('../images/hearst-api-portal-logo.svg') center 22px no-repeat;
+	background: transparent url('../images/hearst-api-portal-logo.svg') center center no-repeat;
 	transition: all .8s;
 	height: 88px;
+	background-size: 90% 90%;	
 }
 
 /* Top Nav Links */
@@ -1645,7 +1646,6 @@ ul.step-links li {
 ul.step-links li a + a {
 	color: #fff; /* text color */
 	font-family: "Helvetica Neue Bold Condensed", Helvetica, sans-serif;
-	font-size: 16px;
 	text-shadow: 0 1px 1px rgba(0,0,0,.7); /* drop shadow */  
 	text-transform: uppercase;
 	text-decoration: none;
@@ -1653,7 +1653,7 @@ ul.step-links li a + a {
 	height: 74px;
 	margin-top: 14px;
 	margin-right: 6px;
-	margin-left: 3px;
+	margin-left: 5px;
 	 
   
 }
@@ -1668,12 +1668,12 @@ ul.step-links li a + a {
 	.main .navbar-nav li { padding: 0; width: 25%; text-align: center; }
 
 	.container .jumbotron {
-		margin: 90px 0 0 0;
+		margin: 78px 0 0 0;
 	}
 	
 	.main .navbar-nav li a { padding: 2px 20px; } 
 	.jumbotron h1.jumbotron-heading { padding-top: 4px;}
-	.open>.dropdown-menu { margin-left: -40px;}
+	.open>.dropdown-menu { margin-left: -20px;}
 	footer ul li {
 		list-style-type: none;
 		padding: 30px 10px;

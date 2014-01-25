@@ -409,208 +409,144 @@ Helvetica Neue Ultra Light Italic
 
 }
 
-@font-face {
-    font-family: 'Helvetica Neue Ultra Light Condensed';
-    src: url('helveticaneue-ultraligcond-webfont.eot');
-    src: url('helveticaneue-ultraligcond-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaneue-ultraligcond-webfont.woff') format('woff'),
-         url('helveticaneue-ultraligcond-webfont.ttf') format('truetype'),
-         url('helveticaneue-ultraligcond-webfont.svg#helvetica_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
 
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Ultra Light Extended';
-    src: url('helveticaneue-ultraligext-webfont.eot');
-    src: url('helveticaneue-ultraligext-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaneue-ultraligext-webfont.woff') format('woff'),
-         url('helveticaneue-ultraligext-webfont.ttf') format('truetype'),
-         url('helveticaneue-ultraligext-webfont.svg#helvetica_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Ultra Light';
-    src: url('helveticaneue-ultralight-webfont.eot');
-    src: url('helveticaneue-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaneue-ultralight-webfont.woff') format('woff'),
-         url('helveticaneue-ultralight-webfont.ttf') format('truetype'),
-         url('helveticaneue-ultralight-webfont.svg#helvetica_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'Helvetica Neue Ultra Light Italic';
-    src: url('helveticaneue-ultralightital-webfont.eot');
-    src: url('helveticaneue-ultralightital-webfont.eot?#iefix') format('embedded-opentype'),
-         url('helveticaneue-ultralightital-webfont.woff') format('woff'),
-         url('helveticaneue-ultralightital-webfont.ttf') format('truetype'),
-         url('helveticaneue-ultralightital-webfont.svg#helvetica_neueregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-.Helvetica-Neue-Black {
+.helvetica-neue-black {
     font-family: 'Helvetica Neue Black', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Black-Condensed {
+.helvetica-neue-black-condensed {
     font-family: 'Helvetica Neue Black Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Black-Extended {
+.helvetica-neue-black-extended {
     font-family: 'Helvetica Neue Black Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Black-Italic {
+.helvetica-neue-black-italic {
     font-family: 'Helvetica Neue Black Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Bold {
+.helvetica-neue-bold {
     font-family: 'Helvetica Neue Bold', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Bold-Condensed {
+.helvetica-neue-bold-condensed {
     font-family: 'Helvetica Neue Bold Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Bold-Extended {
+.helvetica-neue-bold-extended {
     font-family: 'Helvetica Neue Bold Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Bold-Italic {
+.helvetica-neue-bold-italic {
     font-family: 'Helvetica Neue Bold Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Bold-Outline {
+.helvetica-neue-bold-outline {
     font-family: 'Helvetica Neue Bold Outline', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Condensed {
+.helvetica-neue-condensed {
     font-family: 'Helvetica Neue Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Extra-Black-Condensed {
+.helvetica-neue-extra-black-condensed {
     font-family: 'Helvetica Neue Extra Black Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Extended {
+.helvetica-neue-extended {
    font-family: 'Helvetica Neue Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Heavy {
+.helvetica-neue-heavy {
     font-family: 'Helvetica Neue Heavy', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Heavy-Condensed {
+.helvetica-neue-heavy-condensed {
     font-family: 'Helvetica Neue Heavy Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Heavy-Extended {
+.helvetica-neue-heavy-extended {
     font-family: 'Helvetica Neue Heavy Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Heavy-Italic {
+.helvetica-neue-heavy-italic {
     font-family: 'Helvetica Neue Heavy Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Italic {
+.helvetica-neue-italic {
     font-family: 'Helvetica Neue Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Light {
+.helvetica-neue-light {
     font-family: 'Helvetica Neue Light', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Light-Condensed {
+.helvetica-neue-light-condensed {
     font-family: 'Helvetica Neue Light Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Light-Extended {
+.helvetica-neue-light-extended {
     font-family: 'Helvetica Neue Light Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Light-Italic {
+.helvetica-neue-light-italic {
     font-family: 'Helvetica Neue Light Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Medium {
+.helvetica-neue-medium {
     font-family: 'Helvetica Neue Medium', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Medium-Condensed {
+.helvetica-neue-medium-condensed {
     font-family: 'Helvetica Neue Medium Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Medium-Extended {
+.helvetica-neue-medium-extended {
     font-family: 'Helvetica Neue Medium Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Medium-Italic {
+.helvetica-neue-medium-italic {
     font-family: 'Helvetica Neue Medium Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Roman {
+.helvetica-neue-roman {
     font-family: 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Thin {
+.helvetica-neue-thin {
     font-family: 'Helvetica Neue Thin', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Thin-Condensed {
+.helvetica-neue-thin-condensed {
     font-family: 'Helvetica Neue Thin Condensed', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Thin-Extended {
+.helvetica-neue-thin-extended {
     font-family: 'Helvetica Neue Thin Extended', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Thin-Italic {
+.helvetica-neue-thin-italic {
     font-family: 'Helvetica Neue Thin Italic', Helvetica, Arial, sans-serif;
 } 
 
-.Helvetica-Neue-Ultra-Light-Condensed {
-    font-family: 'Helvetica Neue Ultra Light Condensed', Helvetica, Arial, sans-serif;
-} 
-
-.Helvetica-Neue-Ultra-Light-Extended {
-    font-family: 'Helvetica Neue Ultra Light Extended', Helvetica, Arial, sans-serif;
-} 
-
-.Helvetica-Neue-Ultra-Light {
-    font-family: 'Helvetica Neue Ultra Light', Helvetica, Arial, sans-serif;
-} 
-
-.Helvetica-Neue-Ultra-Light-Italic {
-    font-family: 'Helvetica Neue Ultra Light Italic', Helvetica, Arial, sans-serif;
-}
 
 
-.Helvetica-Neue-h1 {
+.helvetica-neue-h1 {
 	font-size: 240%;
 }
-.Helvetica-Neue-h2 {
+.helvetica-neue-h2 {
 	font-size: 180%;
 }
-.Helvetica-Neue-h3 {
+.helvetica-neue-h3 {
 	font-size: 160%;
 }
-.Helvetica-Neue-h4 {
+.helvetica-neue-h4 {
 	font-size: 140%;
 }
-.Helvetica-Neue-h5 {
+.helvetica-neue-h5 {
 	font-size: 120%;
 }
-.Helvetica-Neue-h6 {
+.helvetica-neue-h6 {
 	font-size: 100%;
 }

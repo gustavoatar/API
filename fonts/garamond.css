@@ -21,3 +21,11 @@
     font-style: normal;
 
 }
+
+.garamond{
+	font-family: "Garamond 3", Garamond, Georgia, serif;
+}
+
+.garamond-italic {
+	font-family: "Garamond Pro Italic", Garamond, Georgia, serif;
+}
