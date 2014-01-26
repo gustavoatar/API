@@ -10,6 +10,9 @@
 
 ****************/
 
+body {
+    font-family: 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;	
+}
 
 h1 { font-size: 1.9em; color: #2d2d2d; }
 h2 { font-size: 1.8em; color: #2d2d2d; }
@@ -38,7 +41,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 .dropdown.text-right { padding-left: 26px; }
 
-.heading-large-block { margin-top: 1em; }
+.heading-large-block { margin: 2em; }
 
 .heading-large-block h1 { margin: 0; }
 
