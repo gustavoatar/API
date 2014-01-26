@@ -265,6 +265,19 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	margin-top: 70px;	
 }
 
+.container .jumbotron.internal {
+	background-image: none;
+	background: transparent url(../images/grid-internal.png) center top no-repeat;
+	background-size: cover;
+}
+
+.container .jumbotron.slideshow {
+	margin: 0;
+	padding: 0;
+}
+
+.carousel-control.left, .carousel-control.right { z-index: 20; }
+
 
 .logos {
 	position: absolute;
