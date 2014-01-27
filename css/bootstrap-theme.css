@@ -338,7 +338,7 @@ h4, h5, h6 { margin: 4px 4px; }
 .video-js.vjs-controls-enabled { z-index: 99;}
 .video-js.vjs-playing { z-index: 99; background: #fff; }
 
-.video-js.vjs-paused.vjs-has-started { opacity: .5 }
+.video-js.vjs-paused.vjs-has-started { opacity: 1}
 
 
 .video .heading-large-block h1, .video .heading-large-block h2, .video .button { position: relative; z-index: 10;}
