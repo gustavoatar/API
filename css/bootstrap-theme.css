@@ -15,31 +15,22 @@ body {
 }
 
 h1 { font-size: 1.9em; color: #2d2d2d; }
-h2 { font-size: 1.8em; color: #2d2d2d; }
-h3 { font-size: 1.7em; color: #2d2d2d; }
-h4 { font-size: 1.6em; color: #2d2d2d; }
+h2 { font-size: 1.7em; color: #2d2d2d; }
+h3 { font-size: 1.6em; color: #2d2d2d; }
+h4 { font-size: 1.5em; color: #2d2d2d; }
 h5 { font-size: 1.4em; color: #2d2d2d; }
-h6 { font-size: 1.4em; color: #2d2d2d; }
+h6 { font-size: 1.3em; color: #2d2d2d; }
 
 h1 { margin: 10px 4px 6px 4px; }
 h2 { margin: 6px 4px;}
 h3 { margin: 6px 4px;}
 h4, h5, h6 { margin: 4px 4px; }
 
-h1 { font-size: 1.9em; color: #2d2d2d; }
-h2 { font-size: 1.8em; color: #2d2d2d; }
-h3 { font-size: 1.7em; color: #2d2d2d; }
-h4 { font-size: 1.6em; color: #2d2d2d; }
-h5 { font-size: 1.4em; color: #2d2d2d; }
-h6 { font-size: 1.4em; color: #2d2d2d; }
-
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
 
 .heading-block h1, .heading-block h2 { line-height: 1.1em; margin: 4px 0;	}
-
-.dropdown.text-right { padding-left: 26px; }
 
 .heading-large-block { margin: 2em; }
 
@@ -236,17 +227,12 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 
 .jumbotron h1.jumbotron-heading {
-	font-family: 'Helvetica Neue Condensed Bold', 'Helvetica Neue Bold', 'Helvetica', Arial, sans-serif;
 	color: #fff;
 	padding-top: 4px;
 	margin-bottom:18px;		
 }
 
-.jumbotron h2.jumbotron-subheading {
-	color: #052a4a;
-	font-size: 2.1em;
-	
-}
+
 .container .jumbotron {
 	width: 100%;
 	margin-bottom: 0;
@@ -369,11 +355,11 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 
 ****************/
 
-.btn { padding: 5px 60px;}
+.btn { padding: 5px 50px; }
 
 .btn.btn-small { padding: 5px 20px; }
 
-.mobi.btn { display: block; position: relative; z-index: 10;font-size: 16px; margin: 20px auto 0 auto; width: 200px; }
+.mobi.btn { display: block; position: relative; z-index: 10;font-size: 16px; margin: 20px auto 0 auto; text-align: center; }
 
 .btn.play-video { display: none; }
 
@@ -389,6 +375,7 @@ h6 { font-size: 1.4em; color: #2d2d2d; }
 	font-family: "Helvetica Neue Bold Condensed", "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	height: 40px;
+	text-alighn: center;
 	text-transform: uppercase;
 	border-radius: 18px;	
 }
@@ -1420,11 +1407,14 @@ a.copyright { color: #fff; }
 @media(min-width:767px) {
 	
 h1 { font-size: 3.0em; color: #2d2d2d; }
-h2 { font-size: 2.6em; color: #2d2d2d; }
-h3 { font-size: 2.3em; color: #2d2d2d; }
-h4 { font-size: 2.0em; color: #2d2d2d; }
+h2 { font-size: 2.2em; color: #2d2d2d; }
+h3 { font-size: 2.1em; color: #2d2d2d; }
+h4 { font-size: 1.9em; color: #2d2d2d; }
 h5 { font-size: 1.8em; color: #2d2d2d; }
 h6 { font-size: 1.6em; color: #2d2d2d; }
+
+.jumbotron h1, .jumbotron .h1 { font-size: 3.4em; }
+.jumbotron h2, .jumbotron .h2 { font-size: 1.8em; }
 
 	.main .navbar-nav li a { 
 		line-height: 48px;
@@ -1507,8 +1497,6 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	left: 50%;
 	margin-left: -220px;
 }
-
-.dropdown.text-right { padding-left: 0px; }
 
 .heading-large-block { margin-top: 4em; }
 
@@ -1617,6 +1605,8 @@ ul.step-links li a + a {
 }
 
 @media(min-width: 768px) and (max-width: 1024px){
+.jumbotron h1, .jumbotron .h1 { font-size: 2.6em; }
+.jumbotron h2, .jumbotron .h2 { font-size: 1.6em; }
 .video .heading-large-block {margin-top: 1em;}
 .build-big-ico { background:  #00427c url('../images/main-icons.png') -20px -200px no-repeat; }
 .documentation-big-ico { background:  #00427c url('../images/main-icons.png') -18px -100px no-repeat; }
