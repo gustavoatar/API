@@ -38,7 +38,9 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .heading-large-block h2 { margin: 0 0 10px 0; }
 
+.top-level-links .api-highlights { background: url(../images/blue-line.png) center left repeat-x; width: 65%; margin: 10px auto; }
 
+.top-level-links .api-highlights span { padding: 0 10px; }
 
 /***************/
 
@@ -62,6 +64,15 @@ h4, h5, h6 { margin: 4px 4px; }
 .bright-blue {
 	color: #157ed6;
 }
+
+.background-white {
+	background-color: #fff;
+}
+
+.background-gray {
+	background-color: #f8f8f8;
+}
+
 
 /***************/
 
@@ -929,19 +940,18 @@ h4, h5, h6 { margin: 4px 4px; }
 	-moz-box-shadow: inset 0 4px 8px rgba(0,0,0,.6);
 	-webkit-box-shadow: inset 0 4px 8px rgba(0,0,0,.6);
 	box-shadow: inset 0 4px 8px rgba(0,0,0,.6);
-	border: 10px solid #f8f8f8;
+	border: 8px solid #f8f8f8;
 	text-align: center;
-	opacity: 1;
+	opacity: .8;
 	transition: all .5s;
 }
 
 .top-level-links .col-sm-3.col-md-3.col-lg-3:hover {
-
 }
 
 .top-level-links a:hover img {
 	border: 2px solid #f1c700;	
-	opacity: .7;
+	opacity: 1;
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box; 
