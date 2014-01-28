@@ -437,7 +437,7 @@ easily in the skin designer. http://designer.videojs.com/
 .vjs-default-skin:hover .pulse,
 .vjs-default-skin .vjs-big-play-button:focus .pulse{
 	opacity: 1;
-	border: 4px solid #f1c700;
+	border: 2px solid #f1c700;
 	-webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-ms-transform: scale(1.1);
