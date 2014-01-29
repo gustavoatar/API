@@ -69,9 +69,13 @@ function topNav(){
 // invoke the video js option for flash swf backup player
 $(document).ready(function(){
 	videojs.options.flash.swf = "js/vendor/video-js.swf";
+	// define local scroll
+	$.localScroll({ hash:true, axis:'xy' });
+	// define stellar js 
 	$.stellar({
 		horizontalScrolling: false,
 		repsonsive: true
+		
 	});	
 
 $('.jumbotron .logos:gt(0)').hide(); // hide all but first element

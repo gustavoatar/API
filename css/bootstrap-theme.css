@@ -53,6 +53,10 @@ h4, h5, h6 { margin: 4px 4px; }
 	color: #fff;
 }
 
+.gray {
+	color:  #f8f8f8;
+}
+
 .navy-blue {
 	color: #052a4a;
 }
@@ -73,6 +77,13 @@ h4, h5, h6 { margin: 4px 4px; }
 	background-color: #f8f8f8;
 }
 
+.background-med-gray {
+	background-color: #cacaca;
+}
+
+.background-bright-blue {
+	background-color: #157ed6;
+}
 
 /***************/
 
@@ -98,7 +109,40 @@ h4, h5, h6 { margin: 4px 4px; }
     transition: all .2s ease-in-out;
 }
 .img-circle {
-    border-radius: 50%}
+    border-radius: 50%
+}
+
+.img-vignette {
+	-webkit-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.36);
+	-moz-box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.36);
+	box-shadow: inset 0px 2px 10px 1px rgba(0,0,0,0.36);
+}
+
+.img-vignette img { z-index: -1; position: relative; }
+
+
+/***************/
+
+	/* Objects
+	
+
+****************/
+.circle {
+	border-radius: 50%;
+	width: 20px;
+	height: 20px; 
+	/* width and height can be anything, as long as they're equal */
+}
+
+.tall-rectangle {
+	width: 10px;
+	height: 20px;
+}
+
+.wide-rectangle {
+	width: 20px;
+	height: 10px;
+}
 
 
 /***************/
@@ -110,6 +154,10 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .white-text-shadow {
 	text-shadow: 0 1px 1px rgba(0,0,0,.7);
+}
+
+.dark-text-shadow {
+	text-shadow: 0 1px 4px rgba(0,0,0,.3);
 }
 
 .dark-box-shadow {
@@ -126,11 +174,16 @@ h4, h5, h6 { margin: 4px 4px; }
 ****************/
 
 .home.page .container { padding:0;}
+
 .interior.page .container { padding: 0 15px; }
+
 .internal-page { margin-top: 32px; }
 
 .row.padding { padding: 0; margin: 0; }
 
+.internal-page .column { padding: 0; }
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-top: 10px; padding-bottom: 10px;}
 
 /***************/
 
@@ -343,6 +396,20 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .video .heading-large-block h1, .video .heading-large-block h2, .video .button { position: relative; z-index: 10;}
 
+/***************/
+
+	/* Devices
+	
+
+****************/
+
+.ipad {
+	width: 400px;
+	height: 900px;
+	background: url('../images/ipad.png') 50% 0 no-repeat;
+}
+
+
 
 /***************/
 
@@ -369,16 +436,22 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .carousel-control.left, .carousel-control.right {
 	z-index: 20; 
-	background: none;	
+		
 }
 
-.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right { color: #052a4a; opacity: 1; box-shadow: none; text-shadow: none; }
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {  }
 
-.slideshow.internal { position: relative; }
+.slideshow.internal { position: relative; max-height: 600px; }
 
-.carousel-caption { top: 38%; }
+.carousel-caption { top:18%; right: 0; }
 
+.carousel .icon-arrow { top: 50%; left: 50%; position: absolute;  }
 
+.carousel .position { 
+	position: absolute; 
+	bottom: 80px;
+	left: 10%;
+}
 
 /***************/
 
@@ -387,23 +460,31 @@ h4, h5, h6 { margin: 4px 4px; }
 
 ****************/
 
+
 .internal-page-nav { 
 	position: fixed; 
 	top: 20%; 
-	right: 10%; 
+	right: 8%; 
 	z-index: 21;
-	background: rgba(255,255,255, 1);
-	
+	border-radius: 20px;
+	width: 200px;
 }
-
 
 .nav.internal-page-nav {
-	background: rgba(255,255,255, .5);
+	background: rgba(248,248,248,.7);
 	overflow: hidden;
+	border-radius: 20px;	
 }
-.nav.internal-page-nav li.active a { opacity: 1; }
+.nav.internal-page-nav li.active a { 
+	opacity: 1; 
+	border-radius: 20px;
+	background: #fff;
+}
 
-.nav.internal-page-nav li a { opacity: .5; color: #fff; }
+.nav.internal-page-nav li a { 
+	opacity: .5; color: #157ed6; 
+	border-radius: 20px;
+}
 
 .nav.internal-page-nav li > a:hover, .nav > li > a:focus { 
 	border: 0px;
@@ -411,6 +492,9 @@ h4, h5, h6 { margin: 4px 4px; }
 	background: #f8f8f8;
 	opacity: 1; 
 }
+
+.inline-nav-ball { display: inline-block; text-align: right; float: right; }
+
 
 /***************/
 
@@ -896,8 +980,9 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .list-group {
   border-radius: 20px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
+-webkit-box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
+-moz-box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
+box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
 }
 
 .list-group-item.active,
@@ -990,9 +1075,6 @@ h4, h5, h6 { margin: 4px 4px; }
 .top-level-links h6 { padding: 12px 0;}
 
 .top-level-links img {
-	-moz-box-shadow: inset 0 4px 8px rgba(0,0,0,.6);
-	-webkit-box-shadow: inset 0 4px 8px rgba(0,0,0,.6);
-	box-shadow: inset 0 4px 8px rgba(0,0,0,.6);
 	border: 8px solid #f8f8f8;
 	text-align: center;
 	opacity: .8;
@@ -1092,6 +1174,59 @@ h4, h5, h6 { margin: 4px 4px; }
 	-o-transition: all 0.8s cubic-bezier(0.53, -0.67, 0.79, 0.74);
 	transition: all 0.8s cubic-bezier(0.53, -0.67, 0.79, 0.74);		
 }
+
+/***************/
+
+	/* Logo Links - Images with Hovers
+	
+
+****************/
+.logo-level-links { padding: 6px 0; margin: 0; }
+
+.logo-level-links h6 { padding: 12px 0;}
+
+.logo-level-links img {
+	border: 8px solid #cacaca;
+	text-align: center;
+	opacity: .8;
+	transition: all 0.8s;
+}
+
+.logo-level-links a:hover img {
+	border: 2px solid #f1c700;	
+	opacity: 1;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box; 
+	-webkit-box-shadow: -1px 4px 51px -4px rgba(0,0,0,0.65);
+	-moz-box-shadow: -1px 4px 51px -4px rgba(0,0,0,0.65);
+	box-shadow: -1px 4px 51px -4px rgba(0,0,0,0.65);	
+	transition: all 0.8s;
+}
+
+.logo-level-links {
+	width: 100%;
+	background: #cacaca;
+	border-top: 1px solid #cbcdd0;
+	border-bottom: 1px solid #cbcdd0;
+	padding: 40px 0;
+	text-align: center;
+	height: auto;
+}
+
+.logo-level-links .col-sm-3.col-md-3.col-lg-3{ background: #cacaca; }
+
+.img-responsive { display: inline-block; }
+
+.logo-level-links h4, .logo-level-links p, .logo-level-links h5 {
+	margin: 0;
+	padding: 0;
+}
+
+.logo-level-links a {
+	position: relative;
+}
+
 
 
 /***************/
