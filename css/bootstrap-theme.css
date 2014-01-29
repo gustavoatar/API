@@ -127,6 +127,7 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .home.page .container { padding:0;}
 .interior.page .container { padding: 0 15px; }
+.internal-page { margin-top: 32px; }
 
 .row.padding { padding: 0; margin: 0; }
 
@@ -273,8 +274,6 @@ h4, h5, h6 { margin: 4px 4px; }
 	padding: 0;
 }
 
-.carousel-control.left, .carousel-control.right { z-index: 20; }
-
 
 .logos {
 	position: absolute;
@@ -318,6 +317,7 @@ h4, h5, h6 { margin: 4px 4px; }
 
 ****************/
 
+
 .video {
 	max-width: 100%;
 	height: auto;
@@ -358,6 +358,59 @@ h4, h5, h6 { margin: 4px 4px; }
 	min-height: 100%;
 }
 
+
+/***************/
+
+	/* Carousel
+	
+
+****************/
+
+
+.carousel-control.left, .carousel-control.right {
+	z-index: 20; 
+	background: none;	
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right { color: #052a4a; opacity: 1; box-shadow: none; text-shadow: none; }
+
+.slideshow.internal { position: relative; }
+
+.carousel-caption { top: 38%; }
+
+
+
+/***************/
+
+	/* APIs Page
+	
+
+****************/
+
+.internal-page-nav { 
+	position: fixed; 
+	top: 20%; 
+	right: 10%; 
+	z-index: 21;
+	background: rgba(255,255,255, 1);
+	
+}
+
+
+.nav.internal-page-nav {
+	background: rgba(255,255,255, .5);
+	overflow: hidden;
+}
+.nav.internal-page-nav li.active a { opacity: 1; }
+
+.nav.internal-page-nav li a { opacity: .5; color: #fff; }
+
+.nav.internal-page-nav li > a:hover, .nav > li > a:focus { 
+	border: 0px;
+	box-shadow: none;
+	background: #f8f8f8;
+	opacity: 1; 
+}
 
 /***************/
 
@@ -842,7 +895,7 @@ h4, h5, h6 { margin: 4px 4px; }
 ****************/
 
 .list-group {
-  border-radius: 4px;
+  border-radius: 20px;
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
           box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
 }
@@ -1282,7 +1335,8 @@ footer ul {
 
 footer ul li {
 	list-style-type: none;
-	padding: 30px 20px;
+	padding: 30px 50px;
+	font-size: 1.4em;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -1617,6 +1671,15 @@ ul.step-links li a + a {
 	   background-size:cover; 	
 	}	
 
+	footer ul li {
+		list-style-type: none;
+		padding: 30px 10px;
+		display: inline;
+		float: left;
+		width: auto;
+		clear: none;
+	}
+
 }
 
 @media(min-width: 768px) and (max-width: 1024px){
@@ -1695,14 +1758,7 @@ ul.step-links li a + a {
 	.main .navbar-nav li a { padding: 2px 20px; } 
 	.jumbotron h1.jumbotron-heading { padding-top: 4px;}
 	.open>.dropdown-menu { margin-left: -20px;}
-	footer ul li {
-		list-style-type: none;
-		padding: 30px 10px;
-		display: inline;
-		float: left;
-		width: auto;
-		clear: none;
-	}
+
 }
 
 /* Large desktop */

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Hearst Developer API</title>
+    <meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-152x152.png" />
+    <meta name="msapplication-square70x70logo" content="smalltile.png" />
+    <meta name="msapplication-square150x150logo" content="mediumtile.png" />
+    <meta name="msapplication-wide310x150logo" content="widetile.png" />
+    <meta name="msapplication-square310x310logo" content="largetile.png" />
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="js/vendor/video-js.css">
+
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container dark-box-shadow main-container">
+            <div class="navbar-holder navbar-fixed-top">
+                <div class="navbar dark-blue-bk top">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#faq" id="faq-link">FAQ</a>
+                            </li>
+                            <li><a href="#blog" id="blog-link">Blog</a>
+                            </li>
+                            <li><a href="#support" id="support-link">Support</a>
+                            </li>
+                            <li><a href="#signin" id="signin-link">Sign In</a>
+                            </li>
+                            <li class="dropdown text-right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdown">Quick Links <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">My Account</li>
+                                    <li><a href="#faq">My Applications</a>
+                                    </li>
+                                    <li><a href="#support">My API Keys</a>
+                                    </li>
+                                    <li><a href="#support">My Settings</a>
+                                    </li>
+                                    <li><a href="#blog">Register Application</a>
+                                    </li>
+                                    <li><a href="#signout">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar navbar-inverse main dark-box-shadow">
+                	<div class="container">
+                        <div class="navbar-header">
+                            <a class="navbar-brand logo" href="#">Hearst Developer API</a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                        </div>
+                        <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
+                            <li><a href="#content"><span id="apis-link"></span>API<small>s</small></a>
+                            </li>
+                            <li><a href="#documentation"><span id="documentation-link"></span>Documentation</a>
+                            <li><a href="#iodocs"><span id="io-docs-link"></span>I/O Docs</a>
+                            </li>
+                            <li><a href="#search"><span id="register-link"></span>Register</a>
+                            </li>
+    
+                            <!--<form class="navbar-form navbar-right" id="nav-search-form">
+                  <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                    </div>
+                  <button style="display: none;" type="submit" class="btn btn-success">Sign in</button>
+                  </form> -->
+                        </ul>
+                	</div>
+                </div>
+            </div>
+        <div class="page">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <div class="row clearfix">
+                            <div class="col-md-9 column">
+                                        <div class="jumbotron epic slideshow internal">
+                                            <div class="carousel slide" id="carousel-73339">
+                                            <h1 class="jumbotron-heading white-text-shadow white-text helvetica-neue-bold-condensed">Your app + Hearst content, <br />it's that simple.</h1>
+                                        
+                                            <button class="btn btn-default mobi">Get Started<span class="arrow-white"></span></button>
+                                            <div class="stars stars-one" data-stellar-background-ratio="0.1" data-stellar-offset-parent="false" data-stellar-vertical-offset="20"></div>
+                                            <div class="stars stars-two" data-stellar-background-ratio="0.3" data-stellar-offset-parent="false" data-stellar-vertical-offset="0"></div>
+                                            <div class="stars stars-three" data-stellar-background-ratio="0.8" data-stellar-offset-parent="false" data-stellar-vertical-offset="90"></div>
+                                            <div class="stars stars-four" data-stellar-background-ratio="0.5" data-stellar-offset-parent="false" data-stellar-vertical-offset="120"></div>
+                                                <ol class="carousel-indicators">
+                                                    <li class="active" data-slide-to="0" data-target="#carousel-73339">
+                                                    </li>
+                                                    <li data-slide-to="1" data-target="#carousel-73339">
+                                                    </li>
+                                                    <li data-slide-to="2" data-target="#carousel-73339">
+                                                    </li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="item active">
+                                                        <img alt="" src="images/phone-hand.png">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="helvetica-neue-medium">
+                                                                First Thumbnail label
+                                                            </h4>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" src="images/phone-hand.png">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="helvetica-neue-bold-condensed">
+                                                                Second Thumbnail label
+                                                            </h4>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="item">
+                                                        <img alt="" src="images/phone-hand.png">
+                                                        <div class="carousel-caption">
+                                                            <h4 class="helvetica-neue-light-condensed white">
+                                                                Third Thumbnail label
+                                                            </h4>
+                                                            <p>
+                                                                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div> <a class="left carousel-control" href="#carousel-73339" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a> <a class="right carousel-control" href="#carousel-73339" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+                                            </div>                
+                                        </div>
+                                <div class="heading-block text-left">
+                                    <h1 class="helvetica-neue-heavy-condensed bright-blue">APIs Galore.</h1>
+                                    <h2 class="garamond-italic navy-blue">Right at your fingertips.</h2>
+                                </div>
+                                <p>
+                                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                                </p>
+                                <p>
+                                    <a class="btn" href="#">View details »</a>
+                                </p>
+                            </div>
+                            <div class="col-md-3 column">
+                                <div class="list-group">
+                                     <a href="#" class="list-group-item active" id="content-1">APIs Overview</a>
+                                     <a href="#" class="list-group-item" id="content-2">Brands</a>
+                                     <a href="#" class="list-group-item" id="content-3">Get Started</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <footer class="container">
+            	<div class="row margin">
+                    <ul>
+                        <li><a href="#">APIs</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">Sign In</a></li>
+                        <li class="gray"><a href="#">API Terms</a></li>
+                        <li class="gray"><a href="#">API Explorer</a></li>
+                        <li class="gray"><a href="#">API Branding Guide</a></li>
+                    </ul>
+                 </div>
+            	<div class="row margin borders">
+                    <ul class="">
+                        <li><a href="#" class="copyright">&copy;  2014 HEARST CORPORATION. All rights reserved.  Privacy policy</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+        <!-- /container -->
+    </div>
+    </div>
+    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.visible.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>    
+    <script src="js/vendor/video.js"></script>    
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
