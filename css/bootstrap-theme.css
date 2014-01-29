@@ -177,8 +177,6 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .interior.page .container { padding: 0 15px; }
 
-.internal-page { margin-top: 32px; }
-
 .row.padding { padding: 0; margin: 0; }
 
 .internal-page .column { padding: 0; }
@@ -404,12 +402,24 @@ h4, h5, h6 { margin: 4px 4px; }
 ****************/
 
 .ipad {
-	width: 400px;
-	height: 900px;
-	background: url('../images/ipad.png') 50% 0 no-repeat;
+	width: 600px;
+	height: 899px;
+	background: url('../images/ipad-mini.png') 50% 0 no-repeat;
 }
 
 
+.iphone {
+	width: 372px;
+	height: 772px;
+	background: url('../images/iphone.png') 50% 0 no-repeat;
+}
+
+
+.phone-hand {
+	width: 861px;
+	height:840px;
+	background: url('../images/phone-hand.png') 50% 0 no-repeat;
+}
 
 /***************/
 
@@ -433,15 +443,13 @@ h4, h5, h6 { margin: 4px 4px; }
 
 ****************/
 
-
 .carousel-control.left, .carousel-control.right {
 	z-index: 20; 
-		
 }
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {  }
 
-.slideshow.internal { position: relative; max-height: 600px; }
+.slideshow.internal { position: relative; overflow: hidden; }
 
 .carousel-caption { top:18%; right: 0; }
 
@@ -449,8 +457,9 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .carousel .position { 
 	position: absolute; 
-	bottom: 80px;
+	bottom: -180px;
 	left: 10%;
+	z-index: 100;
 }
 
 /***************/
@@ -463,8 +472,8 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .internal-page-nav { 
 	position: fixed; 
-	top: 20%; 
-	right: 8%; 
+	top: 15%; 
+	right: 15%; 
 	z-index: 21;
 	border-radius: 20px;
 	width: 200px;
