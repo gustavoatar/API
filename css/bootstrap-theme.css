@@ -26,6 +26,11 @@ h2 { margin: 6px 4px;}
 h3 { margin: 6px 4px;}
 h4, h5, h6 { margin: 4px 4px; }
 
+p.lead {
+	font-size: 1.4em;
+	font-weight: 400;
+}
+
 .uppercase { text-transform: uppercase; }
 .lowercase { text-transform: lowercase; }
 .capitalize { text-transform: capitalize; }
@@ -182,7 +187,9 @@ h4, h5, h6 { margin: 4px 4px; }
 
 .internal-page .column { padding: 0; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {padding-top: 10px; padding-bottom: 10px;}
+.row {margin: 0;}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { padding: 10px; }
 
 /***************/
 
@@ -470,12 +477,80 @@ h4, h5, h6 { margin: 4px 4px; }
 
 ****************/
 
-
 .internal-page-nav { 
 	display: none;
 }
 
+.internal-page-nav { 
+	position: fixed; 
+	top: 15%; 
+	right: 10%; 
+	z-index: 21;
+	border-radius: 20px;
+	width: 200px;
+}
 
+.nav.internal-page-nav {
+	background: rgba(248,248,248,.7);
+	overflow: hidden;
+	border-radius: 20px;	
+}
+.nav.internal-page-nav li.active a { 
+	opacity: 1; 
+	border-radius: 20px;
+	background: #fff;
+	color: #005480;
+}
+
+.nav.internal-page-nav li a { 
+	opacity: .5; color: #157ed6; 
+	border-radius: 20px;
+}
+
+.nav.internal-page-nav li > a:hover, .internal-page-nav > li > a:focus,	.nav.internal-page-nav > li > a:hover, .nav.internal-page-nav > li > a:focus { 
+	border: 0px;
+	box-shadow: none;
+	background: #f8f8f8;
+	opacity: 1; 
+	color: #005480;
+	border-radius: 20px;
+	
+}
+
+
+.content-section-a {
+	background-color: #f8f8f8;
+	padding: 50px 0;
+}
+
+.content-section-b {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	padding: 50px 0;
+}
+
+.section-heading {
+	margin-bottom: 30px;
+}
+
+.section-heading-spacer {
+	border-top: 3px solid #e7e7e7;
+	width: 200px;
+	float: left;
+}
+
+.banner {
+	padding: 100px 0;
+	color: #f8f8f8;
+	background: url('../images/banner-bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+
+.banner h2 {
+	margin: 0;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+	font-size: 3em;
+}
 
 
 /***************/
@@ -1697,12 +1772,12 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 
 ****************/
 
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { padding: 40px; }
+
 .container {
 	padding-right: 0;
 	padding-left: 0;
 }
-
-.row {margin: 0;}
 
 .row.margin { margin: 0 8em; }
 
@@ -1801,45 +1876,6 @@ ul.step-links li a + a {
 
 @media(min-width: 768px) and (max-width: 1024px){
 	
-/***************/
-
-	/* Internal Page Navigation
-	
-
-****************/
-
-.internal-page-nav { 
-	position: fixed; 
-	top: 15%; 
-	right: 10%; 
-	z-index: 21;
-	border-radius: 20px;
-	width: 200px;
-}
-
-.nav.internal-page-nav {
-	background: rgba(248,248,248,.7);
-	overflow: hidden;
-	border-radius: 20px;	
-}
-.nav.internal-page-nav li.active a { 
-	opacity: 1; 
-	border-radius: 20px;
-	background: #fff;
-}
-
-.nav.internal-page-nav li a { 
-	opacity: .5; color: #157ed6; 
-	border-radius: 20px;
-}
-
-.nav.internal-page-nav li > a:hover, .nav > li > a:focus { 
-	border: 0px;
-	box-shadow: none;
-	background: #f8f8f8;
-	opacity: 1; 
-}
-
 
 /***************/
 
@@ -1944,6 +1980,7 @@ ul.step-links li a + a {
 	z-index: 21;
 	border-radius: 20px;
 	width: 200px;
+	display: block;
 }
 
 
