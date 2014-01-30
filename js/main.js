@@ -70,7 +70,11 @@ function topNav(){
 $(document).ready(function(){
 	videojs.options.flash.swf = "js/vendor/video-js.swf";
 	// define local scroll
-	$.localScroll({ hash:true, axis:'xy' });
+	$.localScroll({ 
+		hash:true, 
+		axis:'xy',
+		offset: -140
+	});
 	// define stellar js 
 	$.stellar({
 		horizontalScrolling: false,
