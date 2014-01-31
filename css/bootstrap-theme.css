@@ -193,6 +193,8 @@ p.lead {
 
 .row.padding { padding: 0; margin: 0; }
 
+.row.padded { padding: 24px 0;}
+
 .internal-page .column { padding: 0; }
 
 .row {margin: 0;}
@@ -569,7 +571,7 @@ p.lead {
 .banner {
 	padding: 80px 40px;
 	color: #f8f8f8;
-	background: url('../images/banner-bg.jpg') no-repeat 90% 0;
+	background: url('../images/banner-bg.jpg') no-repeat 70% 0;
 	background-size: fixed;
 }
 
@@ -615,7 +617,6 @@ p.lead {
 	background-color: #276da9;
 	color: #fff;
 }
-
 
 .btn-default:active,
 .btn-primary:active,
@@ -2040,10 +2041,38 @@ ul.step-links li a + a {
 	.jumbotron h1.jumbotron-heading { padding-top: 4px;}
 	.open>.dropdown-menu { margin-left: -20px;}
 
+/***************/
+
+	/* Banner
+	
+
+****************/
+
+.banner {
+	padding: 80px 40px;
+	color: #f8f8f8;
+	background: url('../images/banner-bg.jpg') no-repeat 70% 0;
+	background-size: fixed;
+}
+
+
 }
 
 /* Large desktop */
 @media (min-width: 1200px) { 
+/***************/
+
+	/* Banner
+	
+
+****************/
+
+.banner {
+	padding: 80px 40px;
+	color: #f8f8f8;
+	background: url('../images/banner-bg.jpg') no-repeat 50% 0;
+	background-size: fixed;
+}
 
 /***************/
 
@@ -2054,14 +2083,20 @@ ul.step-links li a + a {
 
 .internal-page-nav { 
 	position: fixed; 
-	top: 20%; 
-	right: 1%; 
+	top: 15%; 
+	right: 110px;
 	z-index: 100;
 	border-radius: 20px;
 	width: 200px;
 	display: block;
 }
 
+.carousel .position { 
+	position: absolute; 
+	bottom: -340px;
+	left: 8%;
+	z-index: 100;
+}
 
 	.jumbotron h1.jumbotron-heading { padding-top: 45px; }
 	footer ul li {
