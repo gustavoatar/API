@@ -410,6 +410,7 @@ p.lead {
 ****************/
 
 .ipad {
+	display: none;
 	width: 600px;
 	height: 899px;
 	background: url('../images/ipad-mini.png') 50% 0 no-repeat;
@@ -417,13 +418,23 @@ p.lead {
 
 
 .iphone {
+	display: none;
 	width: 372px;
 	height: 772px;
 	background: url('../images/iphone.png') 50% 0 no-repeat;
 }
 
 
+.gs4 {
+	display: none;
+	width: 256px;
+	height: 500px;
+	background: url('../images/gs4.png') 50% 0 no-repeat;
+}
+
+
 .phone-hand {
+	display: none;
 	width: 861px;
 	height:840px;
 	background: url('../images/phone-hand.png') 50% 0 no-repeat;
@@ -459,7 +470,7 @@ p.lead {
 
 .slideshow.internal { position: relative; overflow: hidden; }
 
-.carousel-caption { top:18%; right: 0; }
+.carousel-caption { top:18%;}
 
 .carousel .icon-arrow { top: 50%; left: 50%; position: absolute;  }
 
@@ -468,6 +479,26 @@ p.lead {
 	bottom: -400px;
 	left: 8%;
 	z-index: 100;
+}
+
+.carousel-control span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.carousel-control.right {
+	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 84, 128, 0.7) 100%));
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.7) 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#005480', GradientType=1);
+}
+
+.carousel-control.left {
+	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 84, 128, 0.7) 0), color-stop(rgba(0, 84, 128, 0.5) 100%));
+	background-image: linear-gradient(to right, rgba(0, 84, 128, 0.7) 0, rgba(0, 0, 0, 0.0001) 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005480', endColorstr='#000000000', GradientType=1);
 }
 
 /***************/
@@ -517,16 +548,15 @@ p.lead {
 	
 }
 
-
 .content-section-a {
 	background-color: #f8f8f8;
-	padding: 50px 0;
+	padding: 50px 20px;
 }
 
 .content-section-b {
 	border-top: 1px solid #e7e7e7;
 	border-bottom: 1px solid #e7e7e7;
-	padding: 50px 0;
+	padding: 50px 20px;
 }
 
 .section-heading {
@@ -539,11 +569,19 @@ p.lead {
 	float: left;
 }
 
+
+/***************/
+
+	/* Banner
+	
+
+****************/
+
 .banner {
-	padding: 100px 0;
+	padding: 80px 40px;
 	color: #f8f8f8;
-	background: url('../images/banner-bg.jpg') no-repeat center center;
-	background-size: cover;
+	background: url('../images/banner-bg.jpg') no-repeat 90% 0;
+	background-size: fixed;
 }
 
 .banner h2 {
@@ -576,7 +614,6 @@ p.lead {
 .btn-danger {
 	text-shadow: none;
 	color: #fff;
-	box-shadow: none;
 	font-family: "Helvetica Neue Bold Condensed", "Helvetica Neue Bold", Helvetica, Arial, sans-serif;
 	font-size: 1.2em;
 	height: 40px;
@@ -1666,6 +1703,7 @@ a.copyright { color: #fff; }
 
 
 @media(min-width:767px) {
+
 	
 h1 { font-size: 3.0em; color: #2d2d2d; }
 h2 { font-size: 2.2em; color: #2d2d2d; }
@@ -1737,12 +1775,39 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 /* Padding on main container holding page. */
 .main-container { padding: 90px 0 0 0; }
 
-
 .app-idea{
 	background: url('../images/hearst-tower.jpg') 50% 0 no-repeat;
 	background-size: fixed;	
 	padding: 10px 0 40px 0;
 	min-height: 780px;	
+}
+
+/***************/
+
+	/* Devices
+	
+
+****************/
+
+.ipad {
+	display: block;
+}
+
+
+.iphone {
+	display: block;
+
+}
+
+
+.gs4 {
+	display: block;
+
+}
+
+
+.phone-hand {
+	display: block;
 }
 
 .main-signup {
