@@ -90,6 +90,14 @@ p.lead {
 	background-color: #157ed6;
 }
 
+.background-hearst-blue {
+	background-color: #60809c;
+}
+
+.border-white {
+	border: 1px solid #fff; 
+}
+
 /***************/
 
 	/* Image Treatments
@@ -401,7 +409,6 @@ p.lead {
 
 
 .video .heading-large-block h1, .video .heading-large-block h2, .video .button { position: relative; z-index: 10;}
-
 /***************/
 
 	/* Devices
@@ -411,33 +418,23 @@ p.lead {
 
 .ipad {
 	display: none;
-	width: 600px;
-	height: 899px;
-	background: url('../images/ipad-mini.png') 50% 0 no-repeat;
 }
 
 
 .iphone {
 	display: none;
-	width: 372px;
-	height: 772px;
-	background: url('../images/iphone.png') 50% 0 no-repeat;
+
 }
 
 
 .gs4 {
 	display: none;
-	width: 256px;
-	height: 500px;
-	background: url('../images/gs4.png') 50% 0 no-repeat;
+
 }
 
 
 .phone-hand {
 	display: none;
-	width: 861px;
-	height:840px;
-	background: url('../images/phone-hand.png') 50% 0 no-repeat;
 }
 
 /***************/
@@ -481,25 +478,17 @@ p.lead {
 	z-index: 100;
 }
 
+.position.right { text-align: right; right: 120px; top: 50%;}
+.position.middle { top: 0; right: 50%; opacity: .3;}
+.position.bottom { bottom: 0; right: 50%; opacity: .3;}
+
+
 .carousel-control span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 }
 
-.carousel-control.right {
-	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0), color-stop(rgba(0, 84, 128, 0.7) 100%));
-	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.7) 100%);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#005480', GradientType=1);
-}
-
-.carousel-control.left {
-	background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 84, 128, 0.7) 0), color-stop(rgba(0, 84, 128, 0.5) 100%));
-	background-image: linear-gradient(to right, rgba(0, 84, 128, 0.7) 0, rgba(0, 0, 0, 0.0001) 100%);
-	background-repeat: repeat-x;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#005480', endColorstr='#000000000', GradientType=1);
-}
 
 /***************/
 
@@ -515,8 +504,8 @@ p.lead {
 .internal-page-nav { 
 	position: fixed; 
 	top: 15%; 
-	right: 10%; 
-	z-index: 21;
+	right: 1%; 
+	z-index: 100;
 	border-radius: 20px;
 	width: 200px;
 }
@@ -1769,6 +1758,59 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	background-size: contain;	
 }
 
+
+/***************/
+
+	/* Devices
+	
+
+****************/
+
+.ipad {
+	display: block;
+	width: 600px;
+	height: 899px;
+	background: url('../images/ipad-mini.png') 50% 0 no-repeat;
+}
+
+
+.iphone {
+	display: block;
+	width: 372px;
+	height: 772px;
+	background: url('../images/iphone.png') 50% 0 no-repeat;
+}
+
+.heart-rate{
+	display: block;
+	width: 415px;
+	height: 691px;
+	background: url('../images/heart-rate.jpg') 50% 0 no-repeat;
+}
+
+
+.gs4 {
+	display: block;
+	width: 256px;
+	height: 500px;
+	background: url('../images/gs4.png') 50% 0 no-repeat;
+}
+
+.auto-app {
+	display: block;
+	width:400px;
+	height: 440px;
+	background: url('../images/auto-app.png') bottom right no-repeat;
+}
+
+.phone-hand {
+	display: block;
+	width: 861px;
+	height:840px;
+	background: url('../images/phone-hand.png') 50% 0 no-repeat;
+}
+
+
 /* Top Nav Links */
 .dark-blue-bk .navbar-nav > li > a#signin-link, .dark-blue-bk .navbar-nav > li > a#blog-link, .dark-blue-bk .navbar-nav > li > a#support-link, .dark-blue-bk .navbar-nav > li > a#faq-link{ display: block; }	
 
@@ -1782,34 +1824,6 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	min-height: 780px;	
 }
 
-/***************/
-
-	/* Devices
-	
-
-****************/
-
-.ipad {
-	display: block;
-}
-
-
-.iphone {
-	display: block;
-
-}
-
-
-.gs4 {
-	display: block;
-
-}
-
-
-.phone-hand {
-	display: block;
-}
-
 .main-signup {
 	width: 440px;
 	background-color: #f1f1f1; 
@@ -1819,7 +1833,7 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	text-align: center;
 	padding: 30px 40px;
 	position: absolute;
-	top: 108px;
+	top: 128px;
 	left: 50%;
 	margin-left: -220px;
 }
@@ -2040,9 +2054,9 @@ ul.step-links li a + a {
 
 .internal-page-nav { 
 	position: fixed; 
-	top: 15%; 
-	right: 15%; 
-	z-index: 21;
+	top: 20%; 
+	right: 1%; 
+	z-index: 100;
 	border-radius: 20px;
 	width: 200px;
 	display: block;
