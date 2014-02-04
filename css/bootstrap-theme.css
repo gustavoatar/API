@@ -195,7 +195,11 @@ p.lead {
 
 .row.padded { padding: 24px 60px;}
 
+.padded-text { padding: 0 18px; }
+
 .internal-page .column { padding: 0; }
+
+.internal-page { margin-top: 30px; }
 
 .row {margin: 0;}
 
@@ -467,9 +471,17 @@ p.lead {
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {  }
 
-.slideshow.internal { position: relative; overflow: hidden; margin-top: 30px; }
+.slideshow.internal { position: relative; overflow: hidden;  }
 
-.carousel-caption { top:18%;}
+.carousel-caption { 
+	top:10%; 
+
+}
+
+.carousel-caption a {
+	color: #0086f6;
+	font-family: 'Helvetica Neue Bold Condensed', Helvetica, sans-serif;
+}
 
 .carousel .icon-arrow { top: 50%; left: 50%; position: absolute;  }
 
@@ -479,9 +491,10 @@ p.lead {
 	z-index: 100;
 }
 
-.position.right { text-align: right; right:120px; top: 20%;}
+.position.right { text-align: right; right:120px; top: 10%; max-height: 140px;}
 .position.middle { top: 0; right: 50%; opacity: .3;}
 .position.bottom { bottom: 0; right: 50%; opacity: .3;}
+
 
 
 .carousel-control span {
@@ -1382,6 +1395,10 @@ box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
           box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
+.well .nav > li > a:hover, .nav > li > a { border-bottom: 2px solid #e6e6e6;} 
+.well .nav > li > a:hover, .nav > li > a:focus { box-shadow: none; background: none; transitin: all .3s; border-bottom: 2px solid #cacaca; }
+
+.well {}
 
 /***************/
 
@@ -1840,6 +1857,16 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 	background: url('../images/heart-rate.jpg') 50% 0 no-repeat;
 }
 
+
+.newstand-ipad{
+	background: url('../images/newstand-ipad.png') 160px 46px no-repeat;
+	padding: 80px 0;
+}
+
+.genius {
+	background: url('../images/esquire-genius.jpg') 100px center no-repeat;
+	background-size: contain;
+}
 
 .gs4 {
 	display: block;

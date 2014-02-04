@@ -81,6 +81,10 @@ $(document).ready(function(){
 		repsonsive: true
 		
 	});	
+    $("a[data-tab-destination]").on('click', function() {
+        var tab = $(this).attr('data-tab-destination');
+        $("#"+tab).click();
+    });
 
 $('.jumbotron .logos:gt(0)').hide(); // hide all but first element
 
@@ -107,22 +111,5 @@ $('.jumbotron').bind('mouseenter mouseleave', function(e){
 	
 });
 
-$(window).scroll(function(event) {
-  
-  $(".main-signup").each(function(i, el) {
-    var el = $(el);
-    if (el.visible(true)) {
-      $('.app-idea').addClass("come-in");
-	/*  $.stellar({
-  		// Enable or disable the two types of parallax
-			parallaxBackgrounds: false,
-			parallaxElements: false,			
-		  })*/
-    } 
-  });
-
-
-
-});
 
 
