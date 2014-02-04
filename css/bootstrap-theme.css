@@ -877,7 +877,7 @@ p.lead {
 	
 }
 
-#io-docs-link, #documentation-link, #register-link, #apis-link { padding: 20px 26px; display: inline;}
+#io-docs-link, #documentation-link, #register-link, #apis-link { padding: 20px 22px; margin-right: 20px; margin-left:4px; display: inline;}
 
 #apis-link { background: url('../images/navigation-icons.png') -6px top no-repeat; }
 
