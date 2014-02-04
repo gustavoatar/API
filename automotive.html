@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Hearst Developer API</title>
+    <meta name="description" content="">
+    <meta content=
+    "width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    name="viewport">
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="apple-touch-icon-57x57.png" rel="apple-touch-icon" sizes=
+    "57x57">
+    <link href="apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes=
+    "72x72">
+    <link href="apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes=
+    "114x114">
+    <link href="apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes=
+    "144x144">
+    <link href="apple-touch-icon-60x60.png" rel="apple-touch-icon" sizes=
+    "57x57">
+    <link href="apple-touch-icon-120x120.png" rel="apple-touch-icon" sizes=
+    "72x72">
+    <link href="apple-touch-icon-76x76.png" rel="apple-touch-icon" sizes=
+    "114x114">
+    <link href="apple-touch-icon-152x152.png" rel="apple-touch-icon" sizes=
+    "144x144">
+    <meta content="smalltile.png" name="msapplication-square70x70logo">
+    <meta content="mediumtile.png" name="msapplication-square150x150logo">
+    <meta content="widetile.png" name="msapplication-wide310x150logo">
+    <meta content="largetile.png" name="msapplication-square310x310logo">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/animation.css" rel="stylesheet">
+    <link href="js/vendor/video-js.css" rel="stylesheet">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+</head>
+
+<body data-spy="scroll">
+    <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="container dark-box-shadow main-container">
+            <div class="navbar-holder navbar-fixed-top">
+                <div class="navbar dark-blue-bk top">
+                    <div class="container">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#faq" id="faq-link">FAQ</a>
+                            </li>
+                            <li><a href="#blog" id="blog-link">Blog</a>
+                            </li>
+                            <li><a href="#support" id="support-link">Support</a>
+                            </li>
+                            <li><a href="#signin" id="signin-link">Sign In</a>
+                            </li>
+                            <li class="dropdown text-right">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdown">Quick Links <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-header">My Account</li>
+                                    <li><a href="#faq">My Applications</a>
+                                    </li>
+                                    <li><a href="#support">My API Keys</a>
+                                    </li>
+                                    <li><a href="#support">My Settings</a>
+                                    </li>
+                                    <li><a href="#blog">Register Application</a>
+                                    </li>
+                                    <li><a href="#signout">Sign Out</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar navbar-inverse main dark-box-shadow">
+                	<div class="container">
+                        <div class="navbar-header">
+                        <a class="navbar-brand logo" href="index.html">Hearst Developer API</a>
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                              </button>
+                        </div>
+                        <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="apis-link"></span>Get Started<b class="caret"></b></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-header">By Industry</li>
+                                <li><a role="menuitem" tabindex="-1" href="magazines.html">Magazines</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="automotive.html">Automotive</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="health.html">Health</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="metrics.html">Metrics</a></li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">By Brand</li>
+                                <li><a role="menuitem" tabindex="-1" href="#">Hearst Brands</a></li>
+                           	</ul>
+                            </li>
+                            <li><a href="#iodocs"><span id="io-docs-link"></span>I/O Docs</a>
+                            </li>
+                            <li><a href="#register"><span id="register-link"></span>Register</a>
+                            </li>
+                        </ul>
+                	</div>
+                </div>
+            </div>
+
+        <div class="internal-page">
+            <div class="container" id="content-1">
+                <div class="row clearfix">
+                    <div class="col-md-12 column">
+                        <div class="row clearfix">
+                            <div class="col-md-12 column">
+                                <div class="slideshow internal">
+                                    <div class="carousel slide" id="magazine-apis" data-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="item active" data-stellar-background-ratio=".5">
+                                                <img alt="" src="images/auto-two.jpg" />
+                                                <div class="carousel-caption position right">	
+                                                    <h2 class=
+                                                    "helvetica-neue-bold-condensed gray white-text-shadow">
+                                                    Auto Values you can count on.</h3>
+
+                                                    <h3 class="helvetica-neue-condensed white white-text-shadow">
+                                                    See the licensing options. <a href="#">Learn more</a>
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img alt="" src="images/auto-two.jpg" />
+                                                <div class="carousel-caption position right">
+                                                    <h2 class=
+                                                    "helvetica-neue-bold-condensed gray white-text-shadow">
+                                                    Data that can empower.</h3>
+
+                                                    <h3 class="helvetica-neue-condensed white white-text-shadow">
+                                                    Meet Hearst Health, the leader in health data.</h3>
+                                                </div>
+                                            </div>
+                                            <div class="item">
+                                                <img alt="" src="images/auto-one.jpg" />
+                                                <div class="carousel-caption position right">
+                                                    <h2 class=
+                                                    "helvetica-neue-bold-condensed gray white-text-shadow">A relationship we've all had.</h2>
+                                                    <h3 class="helvetica-neue-condensed white white-text-shadow">
+                                                    Learn about the Hearst Automotive APIs.
+                                                    </h3>
+                                            	</div>
+                                            </div>
+										</div>
+                                    </div>
+									<ul class="list-group internal-page-nav nav navbar">
+										<li class="active"><a href="#content-1">APIs Overview<span class="circle background-hearst-blue inline-nav-ball"></span></a></li>
+										<li><a href="#content-2">Brands<span class="circle background-hearst-blue inline-nav-ball"></span></a></li>
+										<li><a href="#content-3">Get Started<span class="circle background-hearst-blue inline-nav-ball"></span></a></li>
+									</ul>                                            
+								  <ol class="carousel-indicators">
+									  <li data-target="#magazine-apis" data-slide-to="0" class="active"></li>
+									  <li data-target="#magazine-apis" data-slide-to="1"></li>
+									  <li data-target="#magazine-apis" data-slide-to="2"></li>
+									</ol>
+								</div>
+								<a class="left carousel-control"
+								data-slide="prev" href=
+								"#magazine-apis"><span class="glyphicon glyphicon-chevron-left"></span></a>
+								<a class=
+								"right carousel-control" data-slide=
+								"next" href="#magazine-apis"><span class="glyphicon glyphicon-chevron-right"></span>
+								</a>                                    
+                                </div>
+                                <div class="row logo-level-links">
+                                	<div class="clearfix"></div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3" id="content-2">
+										<a href="#"><img border="0" class="img-circle img-responsive" src="images/logo-car-driver.png" /></a>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                       <a href="#"><img border="0" class="img-circle img-responsive" src="images/logo-motor.png" /></a>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                       <a href="#"><img border="0" class="img-circle img-responsive" src="images/logo-blackbook.png" /></a>
+                                    </div>
+                                    <div class="col-sm-3 col-md-3 col-lg-3">
+                                        <a href="#"><img border="0" class="img-circle img-responsive" src="images/logo-road-track.png" /></a>
+                                    </div>
+                                	<div class="row background-white padded">
+										<br />                                	
+										<h3 class="garamond-italic navy-blue center-block">We want to tell you about all of them.</h3>
+										<p>Find out about our licensing options.</p>
+										<br />
+										<button class="btn btn-primary">Licensing Options<span class="arrow-white"></span></button>
+									</div>
+									<div class="row">
+                                		<br />
+										<div class="clearfix"></div>										
+                                    	<img src="images/logos.png" class="img-responsive" />
+                                    </div>
+                                </div>
+                               
+								<div class="content-section-a">
+									<div class="container">
+										<div class="row">
+												<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+													<img class="img-responsive" src="images/phones.png" alt="Phone Images" />
+												</div>											<div class="col-lg-5 col-sm-6">
+												<div class="clearfix"></div>
+												<div class="heading-block text-left">
+													<h1 class="helvetica-neue-heavy-condensed bright-blue section-heading">APIs Galore.</h1>
+													<h2 class="garamond-italic navy-blue">Right at your fingertips.</h2>
+													<p class="lead">This is a good website, <a target="_blank" href="http://www.google.com/">Google.com</a>, you can basically learn anything.  Even my 2 year old son uses it to search for animals.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.container -->
+								</div>
+								<!-- /.content-section-a -->
+
+								<div class="banner" data-stellar-background-ratio=".3">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-6">
+												<h2 class="garamond-italic white white-text-shadow">Are you ready?</h2>
+											</div>
+											<div class="col-lg-6">
+												<button class="btn btn-primary dark-box-shadow">Get Started<span class="arrow-white"></span></button>
+											</div>
+										</div>
+
+									</div>
+									<!-- /.container -->
+
+								</div>
+								<!-- /.banner -->
+
+								<div class="content-section-b" id="content-3">
+									<div class="container">
+										<div class="row">
+											<div class="col-lg-5 col-sm-6">
+												<div class="clearfix"></div>
+												<div class="heading-block text-left">
+													<h1 class="helvetica-neue-heavy-condensed bright-blue section-heading">APIs Galore.</h1>
+													<h2 class="garamond-italic navy-blue">Right at your fingertips.</h2>
+													<p class="lead">This is a good website, <a target="_blank" href="http://www.google.com/">Google.com</a>, you can basically learn anything.  Even my 2 year old son uses it to search for animals.</p>
+												</div>
+											</div>
+											<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+												<img class="img-responsive" src="images/ipad2.png" alt="" />
+											</div>
+										</div>
+
+									</div>
+									<!-- /.container -->
+								</div>
+								<!-- /.content-section-b -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="container">
+                <div class="row margin">
+                    <ul>
+                        <li><a href="#">APIs</a></li>
+
+                        <li><a href="#">Documentation</a></li>
+
+                        <li><a href="#">FAQ</a></li>
+
+                        <li><a href="#">Blog</a></li>
+
+                        <li><a href="#">Support</a></li>
+
+                        <li><a href="#">Sign In</a></li>
+
+                        <li class="gray"><a href="#">API Terms</a></li>
+
+                        <li class="gray"><a href="#">API Explorer</a></li>
+
+                        <li class="gray"><a href="#">API Branding
+                        Guide</a></li>
+                    </ul>
+                </div>
+
+                <div class="row margin borders">
+                    <ul>
+                        <li><a href="#" class="copyright">© 2014 HEARST
+                        CORPORATION. All rights reserved. Privacy
+                        policy</a></li>
+                    </ul>
+                </div>
+            </footer>
+        </div><!-- /container -->
+    </div>
+	<script src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.visible.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+	<script src="js/vendor/jquery.scrollTo.min.js"></script>    
+	<script src="js/vendor/jquery.localScroll.min.js"></script>
+	<script src="js/vendor/video.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
