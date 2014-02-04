@@ -193,7 +193,7 @@ p.lead {
 
 .row.padding { padding: 0; margin: 0; }
 
-.row.padded { padding: 24px 0;}
+.row.padded { padding: 24px 60px;}
 
 .internal-page .column { padding: 0; }
 
@@ -467,7 +467,7 @@ p.lead {
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {  }
 
-.slideshow.internal { position: relative; overflow: hidden; }
+.slideshow.internal { position: relative; overflow: hidden; margin-top: 30px; }
 
 .carousel-caption { top:18%;}
 
@@ -475,12 +475,11 @@ p.lead {
 
 .carousel .position { 
 	position: absolute; 
-	bottom: -400px;
 	left: 8%;
 	z-index: 100;
 }
 
-.position.right { text-align: right; right: 120px; top: 50%;}
+.position.right { text-align: right; right:120px; top: 20%;}
 .position.middle { top: 0; right: 50%; opacity: .3;}
 .position.bottom { bottom: 0; right: 50%; opacity: .3;}
 
@@ -491,6 +490,7 @@ p.lead {
 	left: 50%;
 }
 
+.carousel-indicators { z-index: 999;}
 
 /***************/
 
@@ -509,8 +509,14 @@ p.lead {
 	right: 1%; 
 	z-index: 100;
 	border-radius: 20px;
-	width: 200px;
+	width: 52px;
+	overflow: hidden;
+	padding: 0;
+	text-indent: -200px;
+	transition: all .3s;	
 }
+
+.internal-page-nav:hover { width: 200px; text-indent: 2px; }
 
 .nav.internal-page-nav {
 	background: rgba(248,248,248,.7);
@@ -1327,9 +1333,9 @@ box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
 	background-clip: padding-box; 
-	-webkit-box-shadow: -1px 4px 51px -4px rgba(0,0,0,0.65);
-	-moz-box-shadow: -1px 4px 51px -4px rgba(0,0,0,0.65);
-	box-shadow: -1px 4px 51px -4px rgba(0,0,0,0.65);	
+	-webkit-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.65);
+	-moz-box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.65);
+	box-shadow: -1px 4px 22px -4px rgba(0,0,0,0.65);	
 	transition: all 0.3s;
 }
 
@@ -1338,7 +1344,7 @@ box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
 	background: #cacaca;
 	border-top: 1px solid #cbcdd0;
 	border-bottom: 1px solid #cbcdd0;
-	padding: 40px 0;
+	padding: 20px 0;
 	text-align: center;
 	height: auto;
 }
@@ -2129,10 +2135,9 @@ ul.step-links li a + a {
 .internal-page-nav { 
 	position: fixed; 
 	top: 15%; 
-	right: 110px;
+	right: 3%;
 	z-index: 100;
 	border-radius: 20px;
-	width: 200px;
 	display: block;
 }
 
