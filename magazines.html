@@ -54,11 +54,7 @@
                 <div class="navbar dark-blue-bk top">
                     <div class="container">
                         <ul class="nav navbar-nav">
-                            <li><a href="#faq" id="faq-link">FAQ</a>
-                            </li>
-                            <li><a href="#blog" id="blog-link">Blog</a>
-                            </li>
-                            <li><a href="#support" id="support-link">Support</a>
+                            <li><a href="blog.html" id="blog-link">Blog</a>
                             </li>
                             <li><a href="#signin" id="signin-link">Sign In</a>
                             </li>
@@ -66,13 +62,13 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="dropdown">Quick Links <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-header">My Account</li>
-                                    <li><a href="#faq">My Applications</a>
+                                    <li><a href="#my-apps">My Applications</a>
                                     </li>
-                                    <li><a href="#support">My API Keys</a>
+                                    <li><a href="#my-api-keys">My API Keys</a>
                                     </li>
-                                    <li><a href="#support">My Settings</a>
+                                    <li><a href="#my-settings">My Settings</a>
                                     </li>
-                                    <li><a href="#blog">Register Application</a>
+                                    <li><a href="#register-app">Register Application</a>
                                     </li>
                                     <li><a href="#signout">Sign Out</a>
                                     </li>
@@ -93,21 +89,18 @@
                               </button>
                         </div>
                         <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
-                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span id="apis-link"></span>Get Started<b class="caret"></b></a>
+                            <li><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon-api"></span>Explore <b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu">
                                 <li class="dropdown-header">By Industry</li>
                                 <li><a role="menuitem" tabindex="-1" href="magazines.html">Magazines</a></li>
                                 <li><a role="menuitem" tabindex="-1" href="automotive.html">Automotive</a></li>
-                                <li><a role="menuitem" tabindex="-1" href="health.html">Health</a></li>
-                                <li><a role="menuitem" tabindex="-1" href="metrics.html">Metrics</a></li>
-                                <li class="divider"></li>
-                                <li class="dropdown-header">By Brand</li>
-                                <li><a role="menuitem" tabindex="-1" href="brands.html">Hearst Brands</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="health-care.html">Health Care</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="data-services.html">Data Services</a></li>
                            	</ul>
                             </li>
-                            <li><a href="#iodocs"><span id="io-docs-link"></span>I/O Docs</a>
+                            <li><a href="io-docs.html"><span class="icon-iodocs"></span>I/O Docs</a>
                             </li>
-                            <li><a href="index.html#register"><span id="register-link"></span>Register</a>
+                            <li><a href="index.html#register"><span class="icon-key"></span>Register</a>
                             </li>
                         </ul>
                 	</div>
@@ -147,12 +140,7 @@
                                                 </div>
                                             </div>
 										</div>
-                                    </div>
-									<ul class="list-group internal-page-nav nav navbar">
-										<li class="active"><a href="#the-latest">The Latest Scoop<span class="circle background-hearst-blue inline-nav-ball"></span></a></li>
-										<li><a href="#brands">The Brands<span class="circle background-hearst-blue inline-nav-ball"></span></a></li>
-										<li><a href="#get-started">Get Started<span class="circle background-hearst-blue inline-nav-ball"></span></a></li>
-									</ul>                                            
+                                    </div>                                       
 								 <!--indicators <ol class="carousel-indicators">
 									  <li data-target="#the-latest" data-slide-to="0" class="active"></li>
 									  <li data-target="#the-latest" data-slide-to="1"></li>
@@ -166,37 +154,41 @@
 								"next" href="#the-latest"><span class="glyphicon glyphicon-chevron-right"></span>
 								</a>                                    
                                 </div>
-                                <div class="row logo-level-links">
-                                	<div class="clearfix"></div>
-                                    <div class="col-sm-2 col-md-2 col-lg-2" id="brands">
-										<a href="documentation.html"><img border="0" class="img-circle img-responsive" src="images/logo-harpers-bazaar.png" /></a>
-                                    </div>
-                                    <div class="col-sm-2 col-md-2 col-lg-2">
-                                       <a href="documentation.html"><img border="0" class="img-circle img-responsive" src="images/logo-marie-claire.png" /></a>
-                                    </div>
-                                    <div class="col-sm-2 col-md-2 col-lg-2">
-                                       <a href="documentation.html"><img border="0" class="img-circle img-responsive" src="images/logo-cosmopolitan.png" /></a>
-                                    </div>
-                                    <div class="col-sm-2 col-md-2 col-lg-2">
-                                        <a href="documentation.html"><img border="0" class="img-circle img-responsive" src="images/logo-elle.png" /></a>
-                                    </div>
-                                    <div class="col-sm-2 col-md-2 col-lg-2">
-                                        <a href="documentation.html"><img border="0" class="img-circle img-responsive" src="images/logo-esquire.jpg" /></a>
-                                    </div>
-                                    <div class="col-sm-2 col-md-2 col-lg-2">
-                                        <a href="documentation.html"><img border="0" class="img-circle img-responsive" src="images/logo-house-beautiful.jpg" /></a>
-                                    </div>
-                                </div>
                                 <div class="container">
-                                	<div class="row background-white padded">
+                                	<div class="row background-med-gray padded">
 										<br />    
-										<img src="images/hearst-magazines.jpg" class="pull-right" />                            	
-										<h3 class="garamond-italic navy-blue center-block">Fashion, Music, and Entertainment content all at your fingertips.</h3>
-										<p>Find out about our licensing options.</p>
+										<div class="logo-level-links"><a href="documentation.html"><img src="images/logo-car-driver.png" width="300" height="300" class="featurette img-circle dark-box-shadow pull-right" /></a>                 	
+										</div><h1 class="garamond-italic navy-blue center-block">Ready for your masterful coding.</h1>
+										<p class="lead">Brilliant ideas, meet Car and Driver's API.</p>
 										<br />
-										<button class="btn btn-primary">Licensing Options<span class="arrow-white"></span></button>
+										<button class="btn btn-primary">Register<span class="arrow-white"></span></button>
+
                                     </div>      
                                 </div>    
+                                <div class="row">
+                                	<br />
+                                	<h2 class="text-center garamond-italic navy-blue">Hearst Magazine APIs Coming Soon.</h2>
+                                	<hr />
+                                	<img src="images/magazine-logo-group.jpg" class="img-responsive" />
+                                </div>
+                                <hr />
+								<div class="content-section-a newstand-ipad">
+									<div class="container">
+										<div class="row padded">
+																		
+												<div class="col-lg-12">
+												<div class="heading-block text-right pull-right">
+													<h1 class="helvetica-neue-heavy-condensed bright-blue section-heading">Content is king.</h1>
+													<h2 class="garamond-italic navy-blue">Give your users what they deserve.</h2>
+													<p class="lead"><a target="_blank" href="index.html#register">Sign up and get know our APIs</a></p>
+												
+												</div>
+											</div>
+										</div>
+									</div>
+									<!-- /.container -->
+								</div>
+								<!-- /.content-section-a -->                                
 								<div class="banner" data-stellar-background-ratio=".5" id="get-started">
 									<div class="container">
 										<div class="row">
@@ -213,22 +205,6 @@
 
 								</div>
 								<!-- /.banner -->                                                     
-								<div class="content-section-a newstand-ipad">
-									<div class="container">
-										<div class="row padded">
-																		
-												<div class="col-lg-12">
-												<div class="heading-block text-right pull-right">
-													<h1 class="helvetica-neue-heavy-condensed bright-blue section-heading">Content is king.</h1>
-													<h2 class="garamond-italic navy-blue">Give your readers what they deserve.</h2>
-													<p class="lead">Lorem ipsum doler, <a target="_blank" href="http://www.google.com/">Google.com</a>, almi lora pera su.</p>
-												</div>
-											</div>
-										</div>
-									</div>
-									<!-- /.container -->
-								</div>
-								<!-- /.content-section-a -->
                             </div>
                         </div>
                     </div>
@@ -238,27 +214,20 @@
             <footer class="container">
                 <div class="row margin">
                     <ul>
-                        <li><a href="#">APIs</a></li>
+                        <li><a href="magazines.html">Magazine APIs</a></li>
 
-                        <li><a href="#">Documentation</a></li>
+                        <li><a href="health-care.html">Healthcare APIs</a></li>
 
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="automotive.html">Automotive APIs</a></li>
 
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="data-services.html">Data Services APIs</a></li>
 
-                        <li><a href="#">Support</a></li>
+                        <li><a href="blog.html">Blog</a></li>
 
                         <li><a href="#">Sign In</a></li>
 
-                        <li class="gray"><a href="#">API Terms</a></li>
-
-                        <li class="gray"><a href="#">API Explorer</a></li>
-
-                        <li class="gray"><a href="#">API Branding
-                        Guide</a></li>
                     </ul>
                 </div>
-
                 <div class="row margin borders">
                     <ul>
                         <li><a href="#" class="copyright">© 2014 HEARST

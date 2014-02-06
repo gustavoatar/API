@@ -73,7 +73,7 @@ $(document).ready(function(){
 	$.localScroll({ 
 		hash:true, 
 		axis:'xy',
-		offset: -190
+		offset: -138
 	});
 	// define stellar js 
 	$.stellar({

@@ -23,6 +23,20 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+[data-icon]:before {
+        font-family: 'hearst-api';
+        content: attr(data-icon);
+        speak: none;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+}
+
 .icon-key-arrow:before {
 	content: "\e600";
 }
