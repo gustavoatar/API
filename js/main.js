@@ -109,21 +109,29 @@ $('.jumbotron').bind('mouseenter mouseleave', function(e){
    mo=(e.type==='mouseenter')?(stop=true,clearTimeout(t),h()):(stop=false,h(),aa());
 });
 	
-$(document).ready(function() {
-  if(!Modernizr.input.placeholder){
-    $("input").each(function(){
-      if($(this).val()=="" &amp;&amp; $(this).attr("placeholder")!=""){
-        $(this).val($(this).attr("placeholder"));
-        $(this).focus(function(){
-          if($(this).val()==$(this).attr("placeholder")) $(this).val("");
-        });
-        $(this).blur(function(){
-          if($(this).val()=="") $(this).val($(this).attr("placeholder"));
-        });
+if(!Modernizr.input.placeholder){
+
+    $('[placeholder]').focus(function() {
+      var input = $(this);
+      if (input.val() == input.attr('placeholder')) {
+        input.val('');
+        input.removeClass('placeholder');
       }
+    }).blur(function() {
+      var input = $(this);
+      if (input.val() == '' || input.val() == input.attr('placeholder')) {
+        input.addClass('placeholder');
+        input.val(input.attr('placeholder'));
+      }
+    }).blur();
+    $('[placeholder]').parents('form').submit(function() {
+      $(this).find('[placeholder]').each(function() {
+        var input = $(this);
+        if (input.val() == input.attr('placeholder')) {
+          input.val('');
+        }
+      })
     });
-  }
-});	
 	
 });
 
