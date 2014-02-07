@@ -84,7 +84,7 @@
                                 <li class="dropdown-header">By Industry</li>
                                 <li><a role="menuitem" tabindex="-1" href="magazines.html">Magazines</a></li>
                                 <li><a role="menuitem" tabindex="-1" href="automotive.html">Automotive</a></li>
-                                <li><a role="menuitem" tabindex="-1" href="health-care.html">Health Care</a></li>
+                                <li><a role="menuitem" tabindex="-1" href="healthcare.html">Healthcare</a></li>
                                 <li><a role="menuitem" tabindex="-1" href="data-services.html">Data Services</a></li>
                            	</ul>
                             </li>
@@ -139,12 +139,12 @@
                               </button>
                         </div>
                         <ul class="nav navbar-nav navbar-collapse collapse navbar-right">
-                            <li><a href="#content">Typography</a>
+                            <li><a href="#typography">Typography</a>
                             </li>
-                            <li><a href="#documentation">Buttons</a></li>
-                            <li><a href="#iodocs">Forms</a>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#forms">Forms</a>
                             </li>
-                            <li><a href="#search">Images</a>
+                            <li><a href="#images">Images</a>
                             </li>
                         </ul>
                 	</div>
@@ -153,11 +153,11 @@
         <div class="interior page">
             <!-- Main jumbotron for a primary marketing message or call to action -->
             <div class="jumbotron internal">
-            	<h1 class="jumbotron-heading white-text-shadow white-text helvetica-neue-bold-condensed">Digital Styleguide</h1>
+            	<h1 class="jumbotron-heading white-text-shadow white-text helvetica-neue-bold-condensed">Webmaster Styleguide</h1>
         	</div>
 			<div class="container">
             	<div class="row padding">
-                	<h1 class="navy-blue garamond-italic">Typography</h1>
+                	<h1 class="navy-blue garamond-italic" id="typography">Typography</h1>
                 	<p>All headings for both Helvetica Neue font stack and Garamond font stack are available, colors are optional.  <p>The default type color for Helvetica Neue is a dark gray, HEX number, <code>#2d2d2d</code>, RGB color, <code>45, 45, 45</code> and CMYK color, <code>70, 64, 63, 64</code>.</p>
                 	<hr />
                 	<h1 class="helvetica-neue-heavy-condensed">The quick developer can now jump straight to coding.</h1>
@@ -211,7 +211,7 @@
                         </code>  
                     </pre>                    </div>
 
-			<div class="row padding">
+			<div class="row padding" id="buttons">
             <h1 class="navy-blue garamond-italic">Buttons</h1>
             <br />
             <!-- Standard button -->
@@ -237,7 +237,7 @@
             <button type="button" class="btn btn-link">Link<span class="arrow-white"></span></button> 
             <br />
             <br />           
-                                <pre class="line-numbers language-markup">
+            <pre class="line-numbers language-markup">
                     	<code class="language-markup">
 
             &lt;button type="button" class="btn btn-info">Info&lt;span class="arrow-white">&lt;/span>&lt;/button>
@@ -251,7 +251,7 @@
                     </pre>    
                     <br />
                   
-                <div class="container">         
+                <div class="container" id="forms">         
                     <h1 class="navy-blue garamond-italic">Forms</h1>
                     <div class="well col-lg-4 center-block">
                     <form role="form">
@@ -320,7 +320,7 @@
                         </code>  
                     </pre>    
                     <br />
-            <div class="container">
+            <div class="container" id="images">
             	<h1 class="navy-blue garamond-italic">Images</h1>
                 <p>Image treatments</p>
                 <img src="images/cta-bazaar.jpg" alt="Rounded" class="img-rounded" />
@@ -357,36 +357,43 @@
        </div>
     </div>
             <footer class="container">
-            	<div class="row margin">
+                <div class="row margin">
                     <ul>
-                        <li><a href="#">APIs</a></li>
-                        <li><a href="#">Documentation</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Support</a></li>
+                        <li><a href="magazines.html">Magazine APIs</a></li>
+
+                        <li><a href="healthcare.html">Healthcare APIs</a></li>
+
+                        <li><a href="automotive.html">Automotive APIs</a></li>
+
+                        <li><a href="data-services.html">Data Services APIs</a></li>
+
+                        <li><a href="blog.html">Blog</a></li>
+                        
+                        <li><a href="styleguide.html">Webmaster Styleguide</a></li>
+
                         <li><a href="#">Sign In</a></li>
-                        <li class="gray"><a href="#">API Terms</a></li>
-                        <li class="gray"><a href="#">API Explorer</a></li>
-                        <li class="gray"><a href="#">API Branding Guide</a></li>
+
                     </ul>
-                 </div>
-            	<div class="row borders margin">
+                </div>
+
+                <div class="row margin borders">
                     <ul class="">
-                        <li><a href="#" class="copyright">&copy;  2014 HEARST CORPORATION. All rights reserved.  Privacy policy</a></li>
+                        <li><a href="#" class="copyright">© 2014 HEARST
+                        CORPORATION. All rights reserved. Privacy
+                        policy</a></li>
                     </ul>
                 </div>
             </footer>
-        </div>        <!-- /container -->
+        </div><!-- /container -->
     </div>
-    </div>
-    <script src="js/vendor/jquery-1.10.2.min.js"></script>
+	<script src="js/vendor/jquery-1.10.2.min.js"></script>
 	<script src="js/vendor/jquery.stellar.min.js"></script>
 	<script src="js/vendor/jquery.visible.min.js"></script>
-	<script src="js/vendor/jquery.waypoints.min.js"></script>    
-    <script src="js/vendor/video.js"></script>    
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/vendor/prism.js"></script>
-    <script src="js/main.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+	<script src="js/vendor/jquery.scrollTo.min.js"></script>    
+	<script src="js/vendor/jquery.localScroll.min.js"></script>
+	<script src="js/vendor/video.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
-
 </html>
