@@ -1258,7 +1258,7 @@ box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
 	display: block;
 }
 
-.panel-title a { display: block; transition: margin .3s; }
+.panel-title a { display: block; margin: 12px 0; font-size: 1.2em; }
 
 .panel-title a:hover {  }
 
