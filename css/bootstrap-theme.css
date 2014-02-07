@@ -169,7 +169,7 @@ img.featurette { margin-right: 30px; margin-bottom: 10px; }
 ****************/
 
 .white-text-shadow {
-	text-shadow: 0 1px 1px rgba(0,0,0,.7);
+	text-shadow: 0 2px 1px rgba(0,0,0,.65);
 }
 
 .dark-text-shadow {
@@ -1345,7 +1345,7 @@ box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
 	height: auto;
 }
 
-.top-level-links .col-sm-3.col-md-3.col-lg-3{ background: #f8f8f8; }
+.top-level-links .col-sm-3.col-md-3.col-lg-3{ background: #f8f8f8; padding: 10px;}
 
 .img-responsive { display: inline-block; }
 
@@ -1708,6 +1708,7 @@ footer {
 	text-transform: uppercase;
 	min-height: 160px;
 	padding-bottom: 40px;	
+	font-family: 'Helvetica Neue Condensed', Helvetica, sans-serif;
 }
 
 footer ul { 
