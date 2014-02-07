@@ -14,12 +14,12 @@ body {
     font-family: 'Helvetica Neue Roman', Helvetica, Arial, sans-serif;	
 }
 
-h1 { font-size: 1.9em; color: #2d2d2d; }
-h2 { font-size: 1.5em; color: #2d2d2d; }
-h3 { font-size: 1.6em; color: #2d2d2d; }
-h4 { font-size: 1.5em; color: #2d2d2d; }
-h5 { font-size: 1.4em; color: #2d2d2d; }
-h6 { font-size: 1.3em; color: #2d2d2d; }
+h1 { font-size: 1.5em; color: #2d2d2d; }
+h2 { font-size: 1.4em; color: #2d2d2d; }
+h3 { font-size: 1.3em; color: #2d2d2d; }
+h4 { font-size: 1.2em; color: #2d2d2d; }
+h5 { font-size: 1.1em; color: #2d2d2d; }
+h6 { font-size: 1.0em; color: #2d2d2d; }
 
 h1 { margin: 10px 4px 6px 4px; }
 h2 { margin: 6px 4px;}
@@ -140,6 +140,10 @@ img.featurette { margin-right: 30px; margin-bottom: 10px; }
 	min-height: 200px;
 }
 
+.mobile-stack-fix {
+	 width: 300px;
+	 height: auto;
+}
 
 
 /***************/
@@ -201,7 +205,7 @@ img.featurette { margin-right: 30px; margin-bottom: 10px; }
 
 .row.padding { padding: 0; margin: 0; }
 
-.row.padded { padding: 24px 60px;}
+.row.padded { padding: 24px 20px;}
 
 .padded-text { padding: 0 18px; }
 
@@ -480,7 +484,11 @@ img.featurette { margin-right: 30px; margin-bottom: 10px; }
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {  }
 
-.slideshow.internal { position: relative; overflow: hidden;  }
+.slideshow.internal { position: relative; overflow: hidden;  min-height: 220px; }
+
+.slideshow .carousel-inner img { min-height: 220px; }
+
+
 
 .carousel-caption { 
 	top:10%; 
@@ -1436,6 +1444,7 @@ box-shadow: 0px 4px 46px 4px rgba(0,0,0,0.36);
 	text-align: center;
 	opacity: .8;
 	transition: all 0.3s;
+
 }
 
 .logo-level-links a:hover img {
@@ -2034,6 +2043,9 @@ h6 { font-size: 1.6em; color: #2d2d2d; }
 
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { padding: 20px; }
 
+.row.padded { padding: 24px 60px;}
+
+
 .container {
 	padding-right: 0;
 	padding-left: 0;
@@ -2149,11 +2161,9 @@ ul.step-links li a + a span {
 .documentation-big-ico { background:  #00427c url('../images/main-icons.png') -18px -100px no-repeat; }
 .register-big-ico { background:  #00427c url('../images/main-icons.png') -18px -6px no-repeat; }	
 	
-	.button {
-
+.button {
 	line-height: 116px;
 	width: 116px; height: 116px;
-
 }
 
 .button.icon-key-arrow { font-size: 70px; }
