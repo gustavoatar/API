@@ -1,0 +1,25 @@
+.no_sub .main {
+  border: 0 solid #FF0000;
+  float: left;
+  left: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0  !important;
+  position: relative;
+  width: 100%  !important;;
+}
+.defaultText { width: 300px; }
+.defaultTextActive { color: #555; font-style: none; }
+.main {
+  background: none repeat scroll 0 0 #F3F2F2;
+  float: left;
+  left: 0;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+  right: auto;
+  width: 100%;
+}
+ul.step-links li a:hover{ margin-bottom:0px; line-heigt:1em;}
+.page-page h1.first {
+ display:none;
+}
