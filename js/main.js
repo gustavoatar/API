@@ -133,6 +133,7 @@ if(!Modernizr.input.placeholder){
       })
     });
 	
+}
 });
 
 
